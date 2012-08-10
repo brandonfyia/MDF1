@@ -149,8 +149,11 @@
     lOI = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 360.0f, 300.0f, 50.0f)];
     if (lOI != nil)
     {
-        lOI.text = (@"%@", mutableA description);
-        lOI.backgroundColor = [UIColor blueColor];
+        lOI.text = for (int i=0; 0<[mutableA count]; i++)
+        {
+            @"%@", [mutableA objectAtIndex:i];
+        }
+        lOI.backgroundColor = [UIColor blueColor]
         lOI.textColor = [UIColor magentaColor];
         lOI.textAlignment = UITextAlignmentCenter;
         summaryBox.numberOfLines = 2;
