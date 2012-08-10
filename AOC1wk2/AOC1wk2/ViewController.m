@@ -149,11 +149,7 @@
     lOI = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 360.0f, 300.0f, 100.0f)];
     if (lOI != nil)
     {
-        for (int i=0;i<[mutableA count];i++)
-        {
-           lOI.text = (@"%@", [mutableA objectAtIndex:i]);
-        }
-        
+        lOI.text = (@"%@%@%@%@%@", [mutableA objectAtIndex:0], [mutableA objectAtIndex:1], [mutableA objectAtIndex:2], [mutableA objectAtIndex:3], [mutableA objectAtIndex:4]);
         lOI.backgroundColor = [UIColor blueColor];
         lOI.textColor = [UIColor magentaColor];
         lOI.textAlignment = UITextAlignmentCenter;
