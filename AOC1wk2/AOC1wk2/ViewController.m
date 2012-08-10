@@ -146,10 +146,14 @@
     }
     
     //List of Items ...List?
-    lOI = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 360.0f, 300.0f, 200.0f)];
+    lOI = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 360.0f, 300.0f, 100.0f)];
     if (lOI != nil)
     {
-        lOI.text = (@"%@", [mutableA description]);
+        for (int i=0;i<[mutableA count];i++)
+        {
+           lOI.text = (@"%@", [mutableA objectAtIndex:i]);
+        }
+        
         lOI.backgroundColor = [UIColor blueColor];
         lOI.textColor = [UIColor magentaColor];
         lOI.textAlignment = UITextAlignmentCenter;
