@@ -69,7 +69,15 @@
     
 // 9. Display compare function
     
+    NSInteger booly1 = 59;
+    NSInteger booly2 = 59;
+    BOOL isSame = [self compare:booly1 dose:booly2];
     
+    if (isSame != NO)
+    {
+        NSString *alert = [NSString stringWithFormat:@"Is the number %d equal to the number %d ? Answer: %@", booly1, booly2, isSame?@"YES":@"NO"];
+        [self displayAlertWithString:alert];
+    }
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
