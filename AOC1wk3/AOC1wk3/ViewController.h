@@ -9,5 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+
+}
+
+- (int)add:(NSInteger)firstNum secondNum:(NSInteger)secondNum;
+- (BOOL)compare:(NSInteger)uno dose:(NSInteger)dose;
+- (NSString*)append:(NSString*)firstS secondString:(NSString*)secondS;
+- (void)displayAlertWithString:(NSString*)alertS;
+
 
 @end
