@@ -55,9 +55,21 @@
     
 // 6. Call add function
     
-    int sum = [self firstNum: 300 secondNum: 1];
+    int sum = [self add:300 secondNum:1];
     
-// 7. 
+// 7. Send add result to alert
+    
+    NSNumber *newNum = [NSNumber numberWithInt:sum];
+    NSString *newNumString = [newNum stringValue];
+    
+// 8. Add title and add int
+    
+    NSString *alert = [self append:@"The Number is " secondString:newNumString];
+    [self displayAlertWithString:alert];
+    
+// 9. Display compare function
+    
+    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
