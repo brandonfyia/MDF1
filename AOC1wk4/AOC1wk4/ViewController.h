@@ -16,6 +16,9 @@
     UILabel *infoLab;
     NSString *infoText;
     NSString *fieldText;
+    UIButton *dateButt;
+    UIButton *infoButt;
+    UILabel *nameLab;
 }
 
 - (NSString*)makeInfoText:(NSString*)firstS secondString:(NSString*)secondS;

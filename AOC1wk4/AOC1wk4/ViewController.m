@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
+#define uButt 0
+#define dButt 1
+#define iButt 2
+
 @interface ViewController ()
 
 @end
@@ -52,6 +56,7 @@
         userButt.frame = CGRectMake(230.0f, 50.0f, 80.0f, 30.0f);
         [userButt setTitle:@"Login" forState:UIControlStateNormal];
         [userButt addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
+        userButt.tag = uButt;
         [self.view addSubview:userButt];
     }
     
@@ -69,19 +74,59 @@
         [self.view addSubview:infoLab];
     }
     
+    //Date Button
+    dateButt = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    if (dateButt != nil)
+    {
+        dateButt.frame = CGRectMake(10.0f, 200.0f, 100.0f, 30.0f);
+        [dateButt setTitle:@"Show Date" forState:UIControlStateNormal];
+        [dateButt addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
+        dateButt.tag = dButt;
+        [self.view addSubview:dateButt];
+    }
+    
+    //info Button
+    infoButt = [UIButton buttonWithType:UIButtonTypeInfoDark];
+    if (infoButt != nil)
+    {
+        infoButt.frame = CGRectMake(10.0f, 250.0f, 30.0f, 30.0f);
+        [infoButt addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
+        infoButt.tag = dButt;
+        [self.view addSubview:infoButt];
+    }
+    
+    //Name Box
+    nameLab = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 300.0f, 320.0f, 80.0f)];
+    if (nameLab != nil)
+    {
+        nameLab.textColor =[UIColor orangeColor];
+        nameLab.backgroundColor = [UIColor whiteColor];
+        nameLab.textAlignment = UITextAlignmentCenter;
+        [self.view addSubview:nameLab];
+    }
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 //onClick Function
-- (void)onCLick
+- (void)onClick:(UIButton*)button
 {
-    fieldText = [userText text];
-    //Username check
-    if (fieldText.length < 1)
+    if (button.tag == uButt)
     {
-        infoText = @"Username cannot be empty.";
-    } else {
-        infoText = @"User: has been logged in.";
+        fieldText = [userText text];
+        //Username check
+        if (fieldText.length < 1)
+        {
+            infoText = @"Username cannot be empty.";
+        } else {
+            infoText = @"User: has been logged in.";
+        }
+    } else if (button.tag == dButt)
+    {
+        
+    } else if (button.tag == iButt)
+    {
+        nameLab.text = @"This application was created by: Brandon Sease.";
     }
 }
 
