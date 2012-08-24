@@ -16,6 +16,26 @@
 
 - (void)viewDidLoad
 {
+    //Background
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    //Username Lable
+    userLab = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 15.0f, 90.0f, 20.0f)];
+    if (userLab != nil)
+    {
+        userLab.text = @"Username: ";
+        userLab.textAlignment = UITextAlignmentRight;
+        [self.view addSubview:userLab];
+    }
+    
+    //Username Textfield
+    UITextField *userText = [[UITextField alloc] initWithFrame:CGRectMake(100.0f, 10.0f, 210.0f, 30.0f)];
+    if (userText != nil)
+    {
+        userText.borderStyle = UITextBorderStyleRoundedRect;
+        [self.view addSubview:userText];
+    }
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
