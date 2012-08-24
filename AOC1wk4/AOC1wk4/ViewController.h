@@ -11,6 +11,13 @@
 @interface ViewController : UIViewController
 {
     UILabel *userLab;
+    UITextField *userText;
+    UIButton *userButt;
+    UILabel *infoLab;
+    NSString *infoText;
+    NSString *fieldText;
 }
+
+- (NSString*)makeInfoText:(NSString*)firstS secondString:(NSString*)secondS;
 
 @end
