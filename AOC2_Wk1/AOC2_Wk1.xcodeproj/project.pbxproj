@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB68BC0F161286F600F8889E /* TextClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FB68BC0E161286F600F8889E /* TextClass.m */; };
 		FBD0D21F16127B8300316E34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD0D21E16127B8300316E34 /* UIKit.framework */; };
 		FBD0D22116127B8300316E34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD0D22016127B8300316E34 /* Foundation.framework */; };
 		FBD0D22316127B8300316E34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD0D22216127B8300316E34 /* CoreGraphics.framework */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB68BC0D161286F600F8889E /* TextClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextClass.h; sourceTree = "<group>"; };
+		FB68BC0E161286F600F8889E /* TextClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextClass.m; sourceTree = "<group>"; };
 		FBD0D21A16127B8300316E34 /* AOC2_Wk1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOC2_Wk1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD0D21E16127B8300316E34 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FBD0D22016127B8300316E34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -83,6 +86,8 @@
 				FBD0D23116127B8300316E34 /* ViewController.m */,
 				FBD0D23316127B8300316E34 /* ViewController.xib */,
 				FBD0D22516127B8300316E34 /* Supporting Files */,
+				FB68BC0D161286F600F8889E /* TextClass.h */,
+				FB68BC0E161286F600F8889E /* TextClass.m */,
 			);
 			path = AOC2_Wk1;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 				FBD0D22B16127B8300316E34 /* main.m in Sources */,
 				FBD0D22F16127B8300316E34 /* AppDelegate.m in Sources */,
 				FBD0D23216127B8300316E34 /* ViewController.m in Sources */,
+				FB68BC0F161286F600F8889E /* TextClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +283,7 @@
 				FBD0D23A16127B8300316E34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
