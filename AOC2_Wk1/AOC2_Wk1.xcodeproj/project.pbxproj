@@ -15,6 +15,11 @@
 		FB41A25E1613D74100CE84CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41A25D1613D74100CE84CD /* AppDelegate.m */; };
 		FB41A2611613D74100CE84CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41A2601613D74100CE84CD /* ViewController.m */; };
 		FB41A2641613D74100CE84CD /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB41A2621613D74100CE84CD /* ViewController.xib */; };
+		FB41A26C1613D78C00CE84CD /* customCarFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41A26B1613D78C00CE84CD /* customCarFactory.m */; };
+		FB41A26F1613D79C00CE84CD /* baseCustomCar.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41A26E1613D79C00CE84CD /* baseCustomCar.m */; };
+		FB41A2721613D7DC00CE84CD /* customTint.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41A2711613D7DB00CE84CD /* customTint.m */; };
+		FB41A2751613D7EB00CE84CD /* customRims.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41A2741613D7EB00CE84CD /* customRims.m */; };
+		FB41A2781613D81C00CE84CD /* customStereo.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41A2771613D81C00CE84CD /* customStereo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,16 @@
 		FB41A25F1613D74100CE84CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FB41A2601613D74100CE84CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FB41A2631613D74100CE84CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		FB41A26A1613D78C00CE84CD /* customCarFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customCarFactory.h; sourceTree = "<group>"; };
+		FB41A26B1613D78C00CE84CD /* customCarFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customCarFactory.m; sourceTree = "<group>"; };
+		FB41A26D1613D79C00CE84CD /* baseCustomCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseCustomCar.h; sourceTree = "<group>"; };
+		FB41A26E1613D79C00CE84CD /* baseCustomCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseCustomCar.m; sourceTree = "<group>"; };
+		FB41A2701613D7DB00CE84CD /* customTint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customTint.h; sourceTree = "<group>"; };
+		FB41A2711613D7DB00CE84CD /* customTint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customTint.m; sourceTree = "<group>"; };
+		FB41A2731613D7EB00CE84CD /* customRims.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customRims.h; sourceTree = "<group>"; };
+		FB41A2741613D7EB00CE84CD /* customRims.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customRims.m; sourceTree = "<group>"; };
+		FB41A2761613D81C00CE84CD /* customStereo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customStereo.h; sourceTree = "<group>"; };
+		FB41A2771613D81C00CE84CD /* customStereo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customStereo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +98,16 @@
 				FB41A2601613D74100CE84CD /* ViewController.m */,
 				FB41A2621613D74100CE84CD /* ViewController.xib */,
 				FB41A2541613D74100CE84CD /* Supporting Files */,
+				FB41A26A1613D78C00CE84CD /* customCarFactory.h */,
+				FB41A26B1613D78C00CE84CD /* customCarFactory.m */,
+				FB41A26D1613D79C00CE84CD /* baseCustomCar.h */,
+				FB41A26E1613D79C00CE84CD /* baseCustomCar.m */,
+				FB41A2701613D7DB00CE84CD /* customTint.h */,
+				FB41A2711613D7DB00CE84CD /* customTint.m */,
+				FB41A2731613D7EB00CE84CD /* customRims.h */,
+				FB41A2741613D7EB00CE84CD /* customRims.m */,
+				FB41A2761613D81C00CE84CD /* customStereo.h */,
+				FB41A2771613D81C00CE84CD /* customStereo.m */,
 			);
 			path = AOC2_Wk1;
 			sourceTree = "<group>";
@@ -164,6 +189,11 @@
 				FB41A25A1613D74100CE84CD /* main.m in Sources */,
 				FB41A25E1613D74100CE84CD /* AppDelegate.m in Sources */,
 				FB41A2611613D74100CE84CD /* ViewController.m in Sources */,
+				FB41A26C1613D78C00CE84CD /* customCarFactory.m in Sources */,
+				FB41A26F1613D79C00CE84CD /* baseCustomCar.m in Sources */,
+				FB41A2721613D7DC00CE84CD /* customTint.m in Sources */,
+				FB41A2751613D7EB00CE84CD /* customRims.m in Sources */,
+				FB41A2781613D81C00CE84CD /* customStereo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

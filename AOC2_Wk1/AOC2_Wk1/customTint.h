@@ -10,4 +10,10 @@
 
 @interface customTint : baseCustomCar
 
+//Data members for number of windows and time per window
+@property int windows;
+@property float timePerWindow;
+
+
+
 @end

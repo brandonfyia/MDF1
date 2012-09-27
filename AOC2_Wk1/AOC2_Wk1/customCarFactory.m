@@ -10,4 +10,8 @@
 
 @implementation customCarFactory
 
++(baseCustomCar *)createNewCustomCar:(int)customType
+{
+    return [[customTint alloc] init];
+}
 @end

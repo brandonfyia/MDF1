@@ -9,5 +9,28 @@
 #import <Foundation/Foundation.h>
 
 @interface baseCustomCar : NSObject
+{
+    int customEnum;
+}
+
+typedef enum {
+    TINT,
+    RIMS,
+    STEREO
+} customEnum;
+
+//Data members for Labor cost per hour, materials, and hours per job
+
+@property int costPerHour;
+@property NSArray *materials;
+@property int hoursPerJob;
+@property NSString *jobDescription;
+@property int total;
+
+// initialize
+-(id)init;
+
+//calculate total cost per job
+-(void)calculateCostPerJob;
 
 @end

@@ -10,4 +10,28 @@
 
 @implementation customTint
 
+@synthesize windows, timePerWindow;
+
+//customizing init to set unique data members
+-(id)init
+{
+    self = [super init];
+    if (self != nil)
+    {
+        [self setCostPerHour:100];
+        [self setWindows:0];
+        [self setTimePerWindow:.5f];
+    }
+    return self;
+};
+
+//Overriding the base recipe cooking time to factor in unique data members
+-(void)calculateCostPerJob
+{
+    [self setHoursPerJob:(windows * timePerWindow)];
+    [self setTotal:(self.hoursPerJob * self.costPerHour)];
+    NSLog(@"This job will cost $%i in total.", self.total);
+    
+}
+
 @end
