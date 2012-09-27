@@ -31,10 +31,29 @@
         [fordRanger setJobDescription:fordRangerDescription];
         
         //Print
-        NSLog(@"You've created a custom tint quote.");
-        NSLog(@"This job's general description is %@", fordRanger.jobDescription);
-        NSLog(@"The job would require %@", fordRanger.materials);
-        
+        tintConfirm = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 15.0f, 300.0f, 20.0f)];
+        if (tintConfirm != nil)
+        {
+            tintConfirm.text = @"You've created a custom tint quote!";
+            tintConfirm.textAlignment = UITextAlignmentCenter;
+            [self.view addSubview:tintConfirm];
+        }
+        tintDetails = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 45.0f, 320.0f, 175.0f)];
+        if (tintDetails != nil)
+        {
+            tintDetails.text = [NSString stringWithFormat:@"Job's general description: %@ and would require: %@", fordRanger.jobDescription, fordRanger.materials];
+            tintDetails.textAlignment = UITextAlignmentCenter;
+            tintDetails.numberOfLines = 8;
+            [self.view addSubview:tintDetails];
+        }
+        tintCost = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 240.0f, 320.0f, 175.0f)];
+        if (tintCost != nil)
+        {
+            tintCost.text = [NSString stringWithFormat:@"A car with %d windows would cost $%d", fordRanger.windows, fordRanger.calculateCostPerJob];
+            tintCost.textAlignment = UITextAlignmentCenter;
+            tintCost.numberOfLines = 8;
+            [self.view addSubview:tintCost];
+        }
         //Calculate job cost
         [fordRanger calculateCostPerJob];
     }

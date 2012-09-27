@@ -18,15 +18,15 @@
         return [[customTint alloc] init];
     }
     //If rim is requested make rim
-    if (customType == RIMS)
+    else if (customType == RIMS)
     {
         return [[customRims alloc] init];
     }
     //If stereo is requested make stereo
-    if (customType == STEREO)
+    else if (customType == STEREO)
     {
         return [[customStereo alloc] init];
     }
-    
+    else return nil;
 }
 @end

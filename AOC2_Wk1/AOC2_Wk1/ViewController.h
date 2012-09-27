@@ -10,5 +10,13 @@
 #import "customCarFactory.h"
 
 @interface ViewController : UIViewController
+{
+    UILabel *tintConfirm;
+    UILabel *tintDetails;
+    UILabel *tintCost;
+
+    
+}
+
 
 @end
