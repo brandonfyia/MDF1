@@ -10,4 +10,42 @@
 
 @implementation customStereo
 
+@synthesize headUnit, amplifiers, tweeters, midRange, subWoofers, totalComponents, timePerComp;
+
+//customizing init to set unique data members
+-(id)init
+{
+    self = [super init];
+    if (self != nil)
+    {
+        [self setCostPerHour:500];
+        [self setHeadUnit:YES];
+        [self setAmplifiers:0];
+        [self setTweeters:0];
+        [self setMidRange:0];
+        [self setSubWoofers:0];
+        [self setTotalComponents:0];
+        [self setTimePerComp:.5f];
+        
+    }
+    return self;
+};
+
+//Overriding the base calculation to factor in unique data members
+-(void)calculateCostPerJob
+{
+    [self setTotalComponents:(amplifiers + tweeters + midRange + subWoofers)];
+    if (headUnit == YES)
+    {
+        [self setTotalComponents:(totalComponents + 1)];
+    } else
+    {
+        [self setHoursPerJob:(totalComponents * timePerComp)];
+        [self setTotal:(self.hoursPerJob * self.costPerHour)];
+        NSLog(@"This job will cost $%i in total.", self.total);
+    }
+}
+
+
+
 @end

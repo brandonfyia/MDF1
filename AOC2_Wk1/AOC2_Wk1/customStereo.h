@@ -10,4 +10,15 @@
 
 @interface customStereo : baseCustomCar
 
+//Data members for number of windows and time per window
+@property BOOL headUnit;
+@property int amplifiers;
+@property int tweeters;
+@property int midRange;
+@property int subWoofers;
+@property int totalComponents;
+@property float timePerComp;
+
+
+
 @end
