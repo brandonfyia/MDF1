@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad
 {
+    self.view.backgroundColor = [UIColor orangeColor];
+    
     //Create a custom tint quote and set number of windows
     customTint *fordRanger = (customTint*)[customCarFactory createNewCustomCar:TINT];
     [fordRanger setWindows:3];
@@ -27,7 +29,7 @@
         [fordRanger setMaterials:fordRangerMaterials];
         
         //Create the job description string
-        NSString *fordRangerDescription = @"Cut tint film to size. Wet windows. Apply Film. Squeegee out air bubbles.";
+        NSString *fordRangerDescription = @"Cut tint film to size. Wet windows. Apply film. Squeegee out air bubbles.";
         [fordRanger setJobDescription:fordRangerDescription];
         
         //Print
@@ -36,6 +38,7 @@
         {
             tintConfirm.text = @"You've created a custom tint quote!";
             tintConfirm.textAlignment = UITextAlignmentCenter;
+            tintConfirm.backgroundColor = [UIColor whiteColor];
             [self.view addSubview:tintConfirm];
         }
         tintDetails = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 45.0f, 320.0f, 175.0f)];
@@ -44,6 +47,7 @@
             tintDetails.text = [NSString stringWithFormat:@"Job's general description: %@ and would require: %@", fordRanger.jobDescription, fordRanger.materials];
             tintDetails.textAlignment = UITextAlignmentLeft;
             tintDetails.numberOfLines = 0;
+            tintDetails.backgroundColor = [UIColor whiteColor];
             [tintDetails sizeToFit];
             [self.view addSubview:tintDetails];
         }
@@ -56,6 +60,7 @@
             tintCost.text = [NSString stringWithFormat:@"The cost for tinting a car with %d windows would be $%d.", fordRanger.windows, fordRanger.total];
             tintCost.textAlignment = UITextAlignmentLeft;
             tintCost.numberOfLines= 0;
+            tintCost.backgroundColor = [UIColor whiteColor];
             [tintCost sizeToFit];
             [self.view addSubview:tintCost];
         }
@@ -73,7 +78,7 @@
         [gmcHummer setMaterials:gmcHummerMaterials];
         
         //Create the job description string
-        NSString *gmcHummerDescription = @"Jack up vehicle. Remove Old rims and tires. Install new rims and tires.";
+        NSString *gmcHummerDescription = @"Jack up vehicle. Remove old rims and tires. Install new rims and tires.";
         [gmcHummer setJobDescription:gmcHummerDescription];
         
         //Print
@@ -82,6 +87,7 @@
         {
             rimsConfirm.text = @"You've created a custom rims quote!";
             rimsConfirm.textAlignment = UITextAlignmentCenter;
+            rimsConfirm.backgroundColor = [UIColor whiteColor];
             [self.view addSubview:rimsConfirm];
         }
         rimsDetails = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 310.0f, 320.0f, 175.0f)];
@@ -90,6 +96,7 @@
             rimsDetails.text = [NSString stringWithFormat:@"Job's general description: %@ and would require: %@", gmcHummer.jobDescription, gmcHummer.materials];
             rimsDetails.textAlignment = UITextAlignmentLeft;
             rimsDetails.numberOfLines = 0;
+            rimsDetails.backgroundColor = [UIColor whiteColor];
             [rimsDetails sizeToFit];
             [self.view addSubview:rimsDetails];
         }
@@ -102,6 +109,7 @@
             rimsCost.text = [NSString stringWithFormat:@"The cost for putting rims on a car %@ spinners would be $%d.", (gmcHummer.spinners?@"with":@"without"), gmcHummer.total];
             rimsCost.textAlignment = UITextAlignmentLeft;
             rimsCost.numberOfLines= 0;
+            rimsCost.backgroundColor = [UIColor whiteColor];
             [rimsCost sizeToFit];
             [self.view addSubview:rimsCost];
         }
@@ -132,6 +140,7 @@
         {
             stereoConfirm.text = @"You've created a custom stereo quote!";
             stereoConfirm.textAlignment = UITextAlignmentCenter;
+            stereoConfirm.backgroundColor = [UIColor whiteColor];
             [self.view addSubview:stereoConfirm];
         }
         stereoDetails = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 575.0f, 320.0f, 175.0f)];
@@ -140,6 +149,7 @@
             stereoDetails.text = [NSString stringWithFormat:@"Job's general description: %@ and would require: %@", scionFRS.jobDescription, scionFRS.materials];
             stereoDetails.textAlignment = UITextAlignmentLeft;
             stereoDetails.numberOfLines = 0;
+            stereoDetails.backgroundColor = [UIColor whiteColor];
             [stereoDetails sizeToFit];
             [self.view addSubview:stereoDetails];
         }
@@ -152,6 +162,7 @@
             stereoCost.text = [NSString stringWithFormat:@"The cost for putting a stereo in a car with %i components would be $%d.", scionFRS.totalComponents, scionFRS.total];
             stereoCost.textAlignment = UITextAlignmentLeft;
             stereoCost.numberOfLines= 0;
+            stereoCost.backgroundColor = [UIColor whiteColor];
             [stereoCost sizeToFit];
             [self.view addSubview:stereoCost];
         }
