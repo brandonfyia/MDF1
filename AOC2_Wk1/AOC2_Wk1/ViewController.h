@@ -14,6 +14,12 @@
     UILabel *tintConfirm;
     UILabel *tintDetails;
     UILabel *tintCost;
+    UILabel *rimsConfirm;
+    UILabel *rimsDetails;
+    UILabel *rimsCost;
+    UILabel *stereoConfirm;
+    UILabel *stereoDetails;
+    UILabel *stereoCost;
 
     
 }

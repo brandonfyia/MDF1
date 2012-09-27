@@ -30,8 +30,6 @@
 {
     [self setHoursPerJob:(windows * timePerWindow)];
     [self setTotal:(self.hoursPerJob * self.costPerHour)];
-    NSLog(@"This job will cost $%i in total.", self.total);
-    
 }
 
 @end

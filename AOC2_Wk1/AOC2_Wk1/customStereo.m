@@ -43,7 +43,6 @@
         [self setHoursPerJob:(totalComponents * timePerComp)];
     }
     [self setTotal:(self.hoursPerJob * self.costPerHour)];
-    NSLog(@"This job will cost $%i in total.", self.total);
 }
 
 

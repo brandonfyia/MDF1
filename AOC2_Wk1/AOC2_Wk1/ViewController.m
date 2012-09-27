@@ -42,20 +42,24 @@
         if (tintDetails != nil)
         {
             tintDetails.text = [NSString stringWithFormat:@"Job's general description: %@ and would require: %@", fordRanger.jobDescription, fordRanger.materials];
-            tintDetails.textAlignment = UITextAlignmentCenter;
-            tintDetails.numberOfLines = 8;
+            tintDetails.textAlignment = UITextAlignmentLeft;
+            tintDetails.numberOfLines = 0;
+            [tintDetails sizeToFit];
             [self.view addSubview:tintDetails];
-        }
-        tintCost = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 240.0f, 320.0f, 175.0f)];
-        if (tintCost != nil)
-        {
-            tintCost.text = [NSString stringWithFormat:@"A car with %d windows would cost $%d", fordRanger.windows, fordRanger.calculateCostPerJob];
-            tintCost.textAlignment = UITextAlignmentCenter;
-            tintCost.numberOfLines = 8;
-            [self.view addSubview:tintCost];
         }
         //Calculate job cost
         [fordRanger calculateCostPerJob];
+        
+        tintCost = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 200.0f, 320.0f, 100.0f)];
+        if (tintCost != nil)
+        {
+            tintCost.text = [NSString stringWithFormat:@"The cost for tinting a car with %d windows would be $%d.", fordRanger.windows, fordRanger.total];
+            tintCost.textAlignment = UITextAlignmentLeft;
+            tintCost.numberOfLines= 0;
+            [tintCost sizeToFit];
+            [self.view addSubview:tintCost];
+        }
+        
     }
     
     //Create a custom rims quote and set spinners yes or no
@@ -73,12 +77,35 @@
         [gmcHummer setJobDescription:gmcHummerDescription];
         
         //Print
-        NSLog(@"You've created a custom rim quote.");
-        NSLog(@"This job's general description is %@", gmcHummer.jobDescription);
-        NSLog(@"The job would require %@", gmcHummer.materials);
-        
+        rimsConfirm = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 280.0f, 300.0f, 20.0f)];
+        if (rimsConfirm != nil)
+        {
+            rimsConfirm.text = @"You've created a custom rims quote!";
+            rimsConfirm.textAlignment = UITextAlignmentCenter;
+            [self.view addSubview:rimsConfirm];
+        }
+        rimsDetails = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 310.0f, 320.0f, 175.0f)];
+        if (rimsDetails != nil)
+        {
+            rimsDetails.text = [NSString stringWithFormat:@"Job's general description: %@ and would require: %@", gmcHummer.jobDescription, gmcHummer.materials];
+            rimsDetails.textAlignment = UITextAlignmentLeft;
+            rimsDetails.numberOfLines = 0;
+            [rimsDetails sizeToFit];
+            [self.view addSubview:rimsDetails];
+        }
         //Calculate job cost
         [gmcHummer calculateCostPerJob];
+        
+        rimsCost = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 465.0f, 320.0f, 100.0f)];
+        if (rimsCost != nil)
+        {
+            rimsCost.text = [NSString stringWithFormat:@"The cost for putting rims on a car %@ spinners would be $%d.", (gmcHummer.spinners?@"with":@"without"), gmcHummer.total];
+            rimsCost.textAlignment = UITextAlignmentLeft;
+            rimsCost.numberOfLines= 0;
+            [rimsCost sizeToFit];
+            [self.view addSubview:rimsCost];
+        }
+        
     }
     
     //Create a custom stereo quote and choose components
@@ -100,12 +127,34 @@
         [scionFRS setJobDescription:scionFRSDescription];
         
         //Print
-        NSLog(@"You've created a custom stereo quote.");
-        NSLog(@"This job's general description is %@", scionFRS.jobDescription);
-        NSLog(@"The job would require %@", scionFRS.materials);
-        
+        stereoConfirm = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 545.0f, 300.0f, 20.0f)];
+        if (stereoConfirm != nil)
+        {
+            stereoConfirm.text = @"You've created a custom stereo quote!";
+            stereoConfirm.textAlignment = UITextAlignmentCenter;
+            [self.view addSubview:stereoConfirm];
+        }
+        stereoDetails = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 575.0f, 320.0f, 175.0f)];
+        if (stereoDetails != nil)
+        {
+            stereoDetails.text = [NSString stringWithFormat:@"Job's general description: %@ and would require: %@", scionFRS.jobDescription, scionFRS.materials];
+            stereoDetails.textAlignment = UITextAlignmentLeft;
+            stereoDetails.numberOfLines = 0;
+            [stereoDetails sizeToFit];
+            [self.view addSubview:stereoDetails];
+        }
         //Calculate job cost
         [scionFRS calculateCostPerJob];
+        
+        stereoCost = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 730.0f, 320.0f, 100.0f)];
+        if (stereoCost != nil)
+        {
+            stereoCost.text = [NSString stringWithFormat:@"The cost for putting a stereo in a car with %i components would be $%d.", scionFRS.totalComponents, scionFRS.total];
+            stereoCost.textAlignment = UITextAlignmentLeft;
+            stereoCost.numberOfLines= 0;
+            [stereoCost sizeToFit];
+            [self.view addSubview:stereoCost];
+        }
     }
     
     [super viewDidLoad];
