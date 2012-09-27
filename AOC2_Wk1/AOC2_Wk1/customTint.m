@@ -25,7 +25,7 @@
     return self;
 };
 
-//Overriding the base recipe cooking time to factor in unique data members
+//Overriding the base calculation to factor in unique data members
 -(void)calculateCostPerJob
 {
     [self setHoursPerJob:(windows * timePerWindow)];
