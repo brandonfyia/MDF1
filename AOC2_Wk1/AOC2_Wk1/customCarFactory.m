@@ -12,6 +12,21 @@
 
 +(baseCustomCar *)createNewCustomCar:(int)customType
 {
-    return [[customTint alloc] init];
+    //If tint is requested make tint
+    if (customType == TINT)
+    {
+        return [[customTint alloc] init];
+    }
+    //If rim is requested make rim
+    if (customType == RIMS)
+    {
+        return [[customRims alloc] init];
+    }
+    //If stereo is requested make stereo
+    if (customType == STEREO)
+    {
+        return [[customStereo alloc] init];
+    }
+    
 }
 @end

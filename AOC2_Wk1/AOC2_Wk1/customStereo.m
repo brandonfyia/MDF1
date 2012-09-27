@@ -37,13 +37,13 @@
     [self setTotalComponents:(amplifiers + tweeters + midRange + subWoofers)];
     if (headUnit == YES)
     {
-        [self setTotalComponents:(totalComponents + 1)];
+        [self setHoursPerJob:((totalComponents + 1)  * timePerComp)];
     } else
     {
         [self setHoursPerJob:(totalComponents * timePerComp)];
-        [self setTotal:(self.hoursPerJob * self.costPerHour)];
-        NSLog(@"This job will cost $%i in total.", self.total);
     }
+    [self setTotal:(self.hoursPerJob * self.costPerHour)];
+    NSLog(@"This job will cost $%i in total.", self.total);
 }
 
 

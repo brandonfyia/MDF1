@@ -12,6 +12,7 @@
 
 //Data members for number of windows and time per window
 @property BOOL spinners;
+@property int wheels;
 @property int hoursPerWheel;
 
 

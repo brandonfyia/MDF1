@@ -23,7 +23,7 @@ typedef enum {
 
 @property int costPerHour;
 @property NSArray *materials;
-@property int hoursPerJob;
+@property float hoursPerJob;
 @property NSString *jobDescription;
 @property int total;
 

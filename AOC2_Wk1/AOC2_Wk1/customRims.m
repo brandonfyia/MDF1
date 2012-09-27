@@ -10,7 +10,7 @@
 
 @implementation customRims
 
-@synthesize spinners, hoursPerWheel;
+@synthesize spinners, wheels, hoursPerWheel;
 
 //customizing init to set unique data members
 -(id)init
@@ -20,6 +20,7 @@
     {
         [self setCostPerHour:250];
         [self setSpinners:NO];
+        [self setWheels:4];
         [self setHoursPerWheel:1];
     }
     return self;
@@ -30,11 +31,11 @@
 {
     if (spinners == YES)
     {
-        [self setHoursPerJob:(self.hoursPerWheel * 2)];
+        [self setHoursPerJob:(self.hoursPerWheel * self.wheels * 2)];
     }
     else
     {
-        [self setHoursPerJob:(self.hoursPerWheel)];  
+        [self setHoursPerJob:(self.hoursPerWheel * self.wheels)];  
     }
     [self setTotal:(self.hoursPerJob * self.costPerHour)];
     NSLog(@"This job will cost $%i in total.", self.total);
