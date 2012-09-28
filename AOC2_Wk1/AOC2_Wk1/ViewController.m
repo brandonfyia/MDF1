@@ -18,6 +18,8 @@
 {
     self.view.backgroundColor = [UIColor orangeColor];
     
+    scrollview.contentSize = CGSizeMake(320.0f, 800.0f);
+    
     //Create a custom tint quote and set number of windows
     customTint *fordRanger = (customTint*)[customCarFactory createNewCustomCar:TINT];
     [fordRanger setWindows:3];
@@ -39,7 +41,7 @@
             tintConfirm.text = @"You've created a custom tint quote!";
             tintConfirm.textAlignment = UITextAlignmentCenter;
             tintConfirm.backgroundColor = [UIColor whiteColor];
-            [self.view addSubview:tintConfirm];
+            [scrollview addSubview:tintConfirm];
         }
         tintDetails = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 45.0f, 320.0f, 175.0f)];
         if (tintDetails != nil)
@@ -49,7 +51,7 @@
             tintDetails.numberOfLines = 0;
             tintDetails.backgroundColor = [UIColor whiteColor];
             [tintDetails sizeToFit];
-            [self.view addSubview:tintDetails];
+            [scrollview addSubview:tintDetails];
         }
         //Calculate job cost
         [fordRanger calculateCostPerJob];
@@ -62,7 +64,7 @@
             tintCost.numberOfLines= 0;
             tintCost.backgroundColor = [UIColor whiteColor];
             [tintCost sizeToFit];
-            [self.view addSubview:tintCost];
+            [scrollview addSubview:tintCost];
         }
         
     }
@@ -88,7 +90,7 @@
             rimsConfirm.text = @"You've created a custom rims quote!";
             rimsConfirm.textAlignment = UITextAlignmentCenter;
             rimsConfirm.backgroundColor = [UIColor whiteColor];
-            [self.view addSubview:rimsConfirm];
+            [scrollview addSubview:rimsConfirm];
         }
         rimsDetails = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 310.0f, 320.0f, 175.0f)];
         if (rimsDetails != nil)
@@ -98,7 +100,7 @@
             rimsDetails.numberOfLines = 0;
             rimsDetails.backgroundColor = [UIColor whiteColor];
             [rimsDetails sizeToFit];
-            [self.view addSubview:rimsDetails];
+            [scrollview addSubview:rimsDetails];
         }
         //Calculate job cost
         [gmcHummer calculateCostPerJob];
@@ -111,7 +113,7 @@
             rimsCost.numberOfLines= 0;
             rimsCost.backgroundColor = [UIColor whiteColor];
             [rimsCost sizeToFit];
-            [self.view addSubview:rimsCost];
+            [scrollview addSubview:rimsCost];
         }
         
     }
@@ -141,7 +143,7 @@
             stereoConfirm.text = @"You've created a custom stereo quote!";
             stereoConfirm.textAlignment = UITextAlignmentCenter;
             stereoConfirm.backgroundColor = [UIColor whiteColor];
-            [self.view addSubview:stereoConfirm];
+            [scrollview addSubview:stereoConfirm];
         }
         stereoDetails = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 575.0f, 320.0f, 175.0f)];
         if (stereoDetails != nil)
@@ -151,7 +153,7 @@
             stereoDetails.numberOfLines = 0;
             stereoDetails.backgroundColor = [UIColor whiteColor];
             [stereoDetails sizeToFit];
-            [self.view addSubview:stereoDetails];
+            [scrollview addSubview:stereoDetails];
         }
         //Calculate job cost
         [scionFRS calculateCostPerJob];
@@ -164,7 +166,7 @@
             stereoCost.numberOfLines= 0;
             stereoCost.backgroundColor = [UIColor whiteColor];
             [stereoCost sizeToFit];
-            [self.view addSubview:stereoCost];
+            [scrollview addSubview:stereoCost];
         }
     }
     

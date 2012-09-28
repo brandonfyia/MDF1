@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "customCarFactory.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIScrollViewDelegate>
 {
+    IBOutlet UIScrollView *scrollview;
     UILabel *tintConfirm;
     UILabel *tintDetails;
     UILabel *tintCost;
