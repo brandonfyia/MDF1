@@ -30,6 +30,7 @@
     int number;
     NSMutableString *numberBuilder;
     IBOutlet UISwitch *uiSwitchOut;
+    UIButton *infoButt;
 }
 
 -(IBAction)onClick:(id)sender;

@@ -19,6 +19,16 @@
     //Check switch
     [self onOrOff:uiSwitchOut.on];
     
+    //Info Button
+    infoButt = [UIButton buttonWithType:UIButtonTypeInfoDark];
+    if (infoButt != nil)
+    {
+        infoButt.frame = CGRectMake(265.0f, 392.0f, 30.0f, 30.0f);
+        [infoButt addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+        infoButt.tag = 13;
+        [self.view addSubview:infoButt];
+    }
+    
     
     [super viewDidUnload];
     [super viewDidLoad];
@@ -85,21 +95,27 @@
         if (button.tag < 10)
         {
             number = button.tag;
+            NSLog(@"%i", number);
         }
         //Plus button
         else if (button.tag ==10)
         {
-            
+            NSLog(@"PLuuuussssssssss");
         }
         //Equals Button
         else if (button.tag ==11)
         {
-            
+            NSLog(@"Euqaaaaaaallllsss");
         }
         //Clear Button
         else if (button.tag ==12)
         {
-            
+            NSLog(@"Cleeeaaaarrrrr");
+        }
+        //info button
+        else if (button.tag == 13)
+        {
+            NSLog(@"innnnnnfoooooo");
         }
 
     }
