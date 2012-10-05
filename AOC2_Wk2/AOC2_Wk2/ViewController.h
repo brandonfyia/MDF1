@@ -26,6 +26,9 @@
     IBOutlet UITextField *textField;
     IBOutlet UISwitch *uiSwitch;
     IBOutlet UISegmentedControl *segment;
+    int *firstNum;
+    int *secondNum;
+    NSMutableString *numberBuilder;
 }
 
 -(IBAction)onClick:(id)sender;

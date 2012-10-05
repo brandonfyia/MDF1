@@ -25,45 +25,10 @@
     UIButton *button = (UIButton*)sender;
     if (button != nil)
     {
-        if (button.tag ==0)
+        if (button.tag < 10)
         {
+            button.tag = numberBuilder;
 
-        }
-        else if (button.tag ==1)
-        {
-            
-        }
-        else if (button.tag ==2)
-        {
-            
-        }
-        else if (button.tag ==3)
-        {
-            
-        }
-        else if (button.tag ==4)
-        {
-            
-        }
-        else if (button.tag ==5)
-        {
-            
-        }
-        else if (button.tag ==6)
-        {
-            
-        }
-        else if (button.tag ==7)
-        {
-            
-        }
-        else if (button.tag ==8)
-        {
-            
-        }
-        else if (button.tag ==9)
-        {
-            
         }
         else if (button.tag ==10)
         {
