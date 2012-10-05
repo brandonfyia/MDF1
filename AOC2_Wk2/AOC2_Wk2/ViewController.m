@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "infoViewController.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,11 @@
 
 - (void)viewDidLoad
 {
-    //Check switch
+    //create string default
+    numberBuilder = [NSMutableString stringWithString:@""];
+    NSLog(@"%@", numberBuilder);
+    
+    //Check switch via function
     [self onOrOff:uiSwitchOut.on];
     
     //Info Button
@@ -80,12 +85,13 @@
     UISwitch *uiSwitch = (UISwitch*)sender;
     if (uiSwitch != nil)
     {
+        //Kick out to on or off function
         [self onOrOff:uiSwitch.on];
     }
 }
 
 
-//Calculator Logic
+//Button hook ups
 -(IBAction)onClick:(id)sender
 {
     UIButton *button = (UIButton*)sender;
@@ -96,6 +102,10 @@
         {
             number = button.tag;
             NSLog(@"%i", number);
+            NSString *temp = [[NSString alloc] stringWithFormat:@"%i", number];
+            [numberBuilder appendString:[NSMutableString stringWithString:temp]];
+            NSLog(@"%@", numberBuilder);
+            textField.text = numberBuilder;
         }
         //Plus button
         else if (button.tag ==10)
@@ -112,21 +122,28 @@
         {
             NSLog(@"Cleeeaaaarrrrr");
         }
-        //info button
+        //info button and second view
         else if (button.tag == 13)
         {
-            NSLog(@"innnnnnfoooooo");
+            infoViewController *infoView = [[infoViewController alloc] initWithNibName:@"infoView" bundle:nil];
+            if (infoView != nil)
+            {
+                [self presentModalViewController:infoView animated:TRUE];
+                
+            }
+            
         }
 
     }
 }
+//Segment controller AKA background color changer
 -(IBAction)onSegementChange:(id)sender
 {
     UISegmentedControl *seg = (UISegmentedControl*)sender;
     if (seg != nil)
     {
         int selectedIndex = seg.selectedSegmentIndex;
-        
+        //Check whats clicked and change to appropriate color.
         if (selectedIndex == 0)
         {
             self.view.backgroundColor = [UIColor whiteColor];

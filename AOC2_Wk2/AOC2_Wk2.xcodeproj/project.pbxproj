@@ -15,6 +15,8 @@
 		FBB57492161E690F002F964E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB57491161E690F002F964E /* AppDelegate.m */; };
 		FBB57495161E690F002F964E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB57494161E690F002F964E /* ViewController.m */; };
 		FBB57498161E6910002F964E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB57496161E6910002F964E /* ViewController.xib */; };
+		FBB574B3161E94C7002F964E /* infoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB574B2161E94C7002F964E /* infoView.xib */; };
+		FBB574B6161E9814002F964E /* infoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB574B5161E9814002F964E /* infoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,9 @@
 		FBB57493161E690F002F964E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FBB57494161E690F002F964E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FBB57497161E6910002F964E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		FBB574B2161E94C7002F964E /* infoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infoView.xib; sourceTree = "<group>"; };
+		FBB574B4161E9814002F964E /* infoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infoViewController.h; sourceTree = "<group>"; };
+		FBB574B5161E9814002F964E /* infoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +88,9 @@
 				FBB57494161E690F002F964E /* ViewController.m */,
 				FBB57496161E6910002F964E /* ViewController.xib */,
 				FBB57488161E690F002F964E /* Supporting Files */,
+				FBB574B2161E94C7002F964E /* infoView.xib */,
+				FBB574B4161E9814002F964E /* infoViewController.h */,
+				FBB574B5161E9814002F964E /* infoViewController.m */,
 			);
 			path = AOC2_Wk2;
 			sourceTree = "<group>";
@@ -151,6 +159,7 @@
 			files = (
 				FBB5748C161E690F002F964E /* InfoPlist.strings in Resources */,
 				FBB57498161E6910002F964E /* ViewController.xib in Resources */,
+				FBB574B3161E94C7002F964E /* infoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +173,7 @@
 				FBB5748E161E690F002F964E /* main.m in Sources */,
 				FBB57492161E690F002F964E /* AppDelegate.m in Sources */,
 				FBB57495161E690F002F964E /* ViewController.m in Sources */,
+				FBB574B6161E9814002F964E /* infoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

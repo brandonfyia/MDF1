@@ -25,13 +25,13 @@
     IBOutlet UIButton *butClear;
     IBOutlet UITextField *textField;
     IBOutlet UISegmentedControl *segment;
-    int *firstNum;
-    int *secondNum;
     int number;
     NSMutableString *numberBuilder;
     IBOutlet UISwitch *uiSwitchOut;
     UIButton *infoButt;
 }
+@property int firstNum;
+@property int secondNum;
 
 -(IBAction)onClick:(id)sender;
 -(IBAction)OnSwitched:(id)sender;
