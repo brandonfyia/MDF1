@@ -24,13 +24,15 @@
     IBOutlet UIButton *butEquals;
     IBOutlet UIButton *butClear;
     IBOutlet UITextField *textField;
-    IBOutlet UISwitch *uiSwitch;
     IBOutlet UISegmentedControl *segment;
     int *firstNum;
     int *secondNum;
+    int number;
     NSMutableString *numberBuilder;
+    IBOutlet UISwitch *uiSwitchOut;
 }
 
 -(IBAction)onClick:(id)sender;
-
+-(IBAction)OnSwitched:(id)sender;
+-(void)onOrOff:(BOOL)isOn;
 @end
