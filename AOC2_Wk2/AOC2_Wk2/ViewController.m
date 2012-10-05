@@ -120,6 +120,28 @@
 
     }
 }
+-(IBAction)onSegementChange:(id)sender
+{
+    UISegmentedControl *seg = (UISegmentedControl*)sender;
+    if (seg != nil)
+    {
+        int selectedIndex = seg.selectedSegmentIndex;
+        
+        if (selectedIndex == 0)
+        {
+            self.view.backgroundColor = [UIColor whiteColor];
+        }
+        if (selectedIndex == 1)
+        {
+            self.view.backgroundColor = [UIColor blueColor];
+        }
+        if (selectedIndex == 2)
+        {
+            self.view.backgroundColor = [UIColor greenColor];
+        }
+    }
+}
+
 
 - (void)viewDidUnload
 {

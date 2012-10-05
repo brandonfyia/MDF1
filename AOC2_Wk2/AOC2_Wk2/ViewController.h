@@ -35,5 +35,6 @@
 
 -(IBAction)onClick:(id)sender;
 -(IBAction)OnSwitched:(id)sender;
+-(IBAction)onSegementChange:(id)sender;
 -(void)onOrOff:(BOOL)isOn;
 @end
