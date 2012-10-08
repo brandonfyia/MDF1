@@ -41,8 +41,13 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+//Save button
 -(IBAction)onClose:(id)sender
 {
+    //TODO: Save event text
+    //TODO: Save date/time
+    //Close Add event view
     [self dismissModalViewControllerAnimated:TRUE];
+    //TODO: Rerun event printer function
 }
 @end

@@ -11,5 +11,6 @@
 @interface ViewController : UIViewController
 
 -(IBAction)onClick:(id)sender;
+-(void)printEvents;
 
 @end

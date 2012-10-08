@@ -34,12 +34,24 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-//On click catcher
+//Event printer function
+-(void)printEvents
+{
+    //TODO:Check for existing text
+    //TODO:Append "New Event:" to text
+    //TODO: Display text in UITextView
+    
+}
+
+
+//New even button
 -(IBAction)onClick:(id)sender
 {
+    //Init add event view
     AddEventViewController *addView = [[AddEventViewController alloc] initWithNibName:@"AddEventViewController" bundle:nil];
     if (addView !=nil)
     {
+        //Show add event view
         [self presentModalViewController:addView animated:TRUE];
     }
 }
