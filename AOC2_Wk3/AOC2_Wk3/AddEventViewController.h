@@ -10,4 +10,7 @@
 
 @interface AddEventViewController : UIViewController
 
+
+-(IBAction)onClose:(id)sender;
+
 @end
