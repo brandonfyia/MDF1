@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol eventViewDelegate <NSObject>
+
+@required
+-(void)didClose:(NSArray*)eventArray;
+
+@end
+
 @interface AddEventViewController : UIViewController
 
 {
@@ -16,11 +23,14 @@
     NSMutableArray *eventList;
     NSDate *chosenDate;
     NSString *dateString;
+    id<eventViewDelegate> delegate;
 }
 
+@property (strong) id<eventViewDelegate> delegate;
 
 -(IBAction)onClose:(id)sender;
 -(IBAction)onChange:(id)sender;
 -(IBAction)onClick:(id)sender;
 
 @end
+

@@ -12,13 +12,17 @@
 @interface ViewController ()
 
 @end
+@class AddEventViewController;
 
 @implementation ViewController
 
 
-
 - (void)viewDidLoad
 {
+    //Event List default
+    
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -51,10 +55,16 @@
     AddEventViewController *addView = [[AddEventViewController alloc] initWithNibName:@"AddEventViewController" bundle:nil];
     if (addView !=nil)
     {
+        addView.delegate = self;
         //Show add event view
         [self presentModalViewController:addView animated:TRUE];
     }
 }
 
+-(void)didClose:(NSArray*)eventArray
+{
+    NSString *newString = [[eventArray valueForKey:@"description"] componentsJoinedByString:@""];
+    textView.text = newString;
+}
 
 @end

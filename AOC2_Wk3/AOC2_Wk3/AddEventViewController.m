@@ -14,10 +14,13 @@
 
 @implementation AddEventViewController
 
+@synthesize delegate;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        delegate = nil;
         // Custom initialization
     }
     return self;
@@ -25,8 +28,6 @@
 
 - (void)viewDidLoad
 {
-    
-
     //Set Date Picker defaults
     [datePicker setTimeZone:[NSTimeZone localTimeZone]];
     [datePicker setMinimumDate:[NSDate date]];
@@ -46,6 +47,7 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
 //Date Picker
 -(IBAction)onChange:(id)sender
 {
@@ -55,6 +57,7 @@
         chosenDate = picker.date;
     }
 }
+
 //Save button
 -(IBAction)onClose:(id)sender
 {
@@ -77,11 +80,18 @@
 
     //Add combined text to array for later print out
     [eventList addObject:startOfText];
+   
+    //Rerun event printer function
+    if (delegate != nil)
+    {
+        [delegate didClose:eventList];
+    }
     
     //Close Add event view
     [self dismissModalViewControllerAnimated:TRUE];
+
     
-    //TODO: Rerun event printer function
+   
 }
 
 //Close Keyboard
