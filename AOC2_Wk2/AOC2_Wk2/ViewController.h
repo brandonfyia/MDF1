@@ -26,6 +26,9 @@
     IBOutlet UITextField *textField;
     IBOutlet UISegmentedControl *segment;
     int number;
+    int firstNumber;
+    int secondNumber;
+    int total;
     NSMutableString *numberBuilder;
     IBOutlet UISwitch *uiSwitchOut;
     UIButton *infoButt;

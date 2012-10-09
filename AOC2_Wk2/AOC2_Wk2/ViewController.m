@@ -18,8 +18,7 @@
 - (void)viewDidLoad
 {
     //create string default
-    numberBuilder = [NSMutableString stringWithString:@""];
-    NSLog(@"%@", numberBuilder);
+    numberBuilder = [[NSMutableString alloc] initWithString:@""];
     
     //Check switch via function
     [self onOrOff:uiSwitchOut.on];
@@ -101,25 +100,42 @@
         if (button.tag < 10)
         {
             number = button.tag;
-            NSLog(@"%i", number);
-            NSString *temp = [[NSString alloc] stringWithFormat:@"%i", number];
-            [numberBuilder appendString:[NSMutableString stringWithString:temp]];
-            NSLog(@"%@", numberBuilder);
+            NSString *temp = [[NSString alloc] initWithFormat:@"%i", number];
+            [numberBuilder appendString:temp];
             textField.text = numberBuilder;
         }
         //Plus button
         else if (button.tag ==10)
         {
+            //save first number
+            firstNumber = [numberBuilder intValue];
+            NSLog(@"%i", firstNumber);
+            //clear text field for second number
+            textField.text = 0;
+            [numberBuilder setString:@""];
             NSLog(@"PLuuuussssssssss");
         }
         //Equals Button
         else if (button.tag ==11)
         {
+            //collect second number
+            secondNumber = [numberBuilder intValue];
+            //add numbers
+            total = (firstNumber + secondNumber);
+            NSLog(@"%i", total);
+            firstNumber = total;
+            //convert to string
+            NSString *temp = [[NSString alloc] initWithFormat:@"%i", total];
+            //print results
+            textField.text = temp;
             NSLog(@"Euqaaaaaaallllsss");
         }
         //Clear Button
         else if (button.tag ==12)
         {
+            firstNumber = 0;
+            secondNumber = 0;
+            textField.text = 0;
             NSLog(@"Cleeeaaaarrrrr");
         }
         //info button and second view
