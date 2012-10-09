@@ -12,10 +12,12 @@
 
 {
     IBOutlet UIDatePicker *datePicker;
+    IBOutlet UITextField *textField;
 }
 
 
 -(IBAction)onClose:(id)sender;
 -(IBAction)onChange:(id)sender;
+-(IBAction)onClick:(id)sender;
 
 @end

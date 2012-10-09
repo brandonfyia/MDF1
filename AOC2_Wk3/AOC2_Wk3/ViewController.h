@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    IBOutlet UITextView *textView;
+}
 
 -(IBAction)onClick:(id)sender;
 -(void)printEvents;

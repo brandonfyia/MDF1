@@ -25,15 +25,11 @@
 
 - (void)viewDidLoad
 {
+    
 
     //Set Date Picker defaults
     [datePicker setTimeZone:[NSTimeZone localTimeZone]];
-    NSDate *todaysDate = [NSDate date];
-    NSLog(@"%@", todaysDate);
-    //Neither of these apear to be working keep getting null. Everything i can find says they are right.  
-    //datePicker.minimumDate = todaysDate;
-    datePicker.minimumDate = [NSDate date];
-    NSLog(@"%@", datePicker.minimumDate);
+    [datePicker setMinimumDate:[NSDate date]];
     
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -68,5 +64,11 @@
     //Close Add event view
     [self dismissModalViewControllerAnimated:TRUE];
     //TODO: Rerun event printer function
+}
+
+//Close Keyboard
+-(IBAction)onClick:(id)sender
+{
+    [textField resignFirstResponder];
 }
 @end
