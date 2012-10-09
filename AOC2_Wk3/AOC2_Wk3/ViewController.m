@@ -12,7 +12,7 @@
 @interface ViewController ()
 
 @end
-@class AddEventViewController;
+
 
 @implementation ViewController
 
@@ -39,11 +39,11 @@
 }
 
 //Event printer function
--(void)printEvents
+-(void)printEvents:(NSArray*)eventArray
 {
-    //TODO:Check for existing text
-    //TODO:Append "New Event:" to text
-    //TODO: Display text in UITextView
+    // Display text in UITextView
+    NSString *newString = [[eventArray valueForKey:@"description"] componentsJoinedByString:@""];
+    textView.text = newString;
     
 }
 
@@ -63,8 +63,7 @@
 
 -(void)didClose:(NSArray*)eventArray
 {
-    NSString *newString = [[eventArray valueForKey:@"description"] componentsJoinedByString:@""];
-    textView.text = newString;
+    [self printEvents:eventArray];
 }
 
 @end

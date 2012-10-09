@@ -16,6 +16,6 @@
 }
 
 -(IBAction)onClick:(id)sender;
--(void)printEvents;
+-(void)printEvents:(NSArray*)eventArray;
 
 @end

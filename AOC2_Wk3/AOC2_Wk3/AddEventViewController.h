@@ -20,6 +20,7 @@
 {
     IBOutlet UIDatePicker *datePicker;
     IBOutlet UITextField *textField;
+    NSMutableString *startOfText;
     NSMutableArray *eventList;
     NSDate *chosenDate;
     NSString *dateString;
