@@ -13,6 +13,9 @@
 {
     IBOutlet UIDatePicker *datePicker;
     IBOutlet UITextField *textField;
+    NSMutableArray *eventList;
+    NSDate *chosenDate;
+    NSString *dateString;
 }
 
 

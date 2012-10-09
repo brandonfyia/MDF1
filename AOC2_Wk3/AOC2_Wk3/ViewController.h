@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 {
     IBOutlet UITextView *textView;
+    
 }
 
 -(IBAction)onClick:(id)sender;
