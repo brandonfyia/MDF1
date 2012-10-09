@@ -10,7 +10,12 @@
 
 @interface AddEventViewController : UIViewController
 
+{
+    IBOutlet UIDatePicker *datePicker;
+}
+
 
 -(IBAction)onClose:(id)sender;
+-(IBAction)onChange:(id)sender;
 
 @end

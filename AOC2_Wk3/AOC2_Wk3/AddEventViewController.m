@@ -25,6 +25,16 @@
 
 - (void)viewDidLoad
 {
+
+    //Set Date Picker defaults
+    [datePicker setTimeZone:[NSTimeZone localTimeZone]];
+    NSDate *todaysDate = [NSDate date];
+    NSLog(@"%@", todaysDate);
+    //Neither of these apear to be working keep getting null. Everything i can find says they are right.  
+    //datePicker.minimumDate = todaysDate;
+    datePicker.minimumDate = [NSDate date];
+    NSLog(@"%@", datePicker.minimumDate);
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -40,7 +50,16 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
+//Date Picker
+-(IBAction)onChange:(id)sender
+{
+    UIDatePicker *picker = (UIDatePicker*)sender;
+    if (picker != nil)
+    {
+        NSDate *chosenDate = picker.date;
+        NSLog(@"You chose: %@", chosenDate);
+    }
+}
 //Save button
 -(IBAction)onClose:(id)sender
 {
