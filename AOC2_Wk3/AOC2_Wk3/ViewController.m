@@ -20,7 +20,7 @@
 - (void)viewDidLoad
 {
     //Event List default
-    
+    eventString = [[NSMutableString alloc] init];    
     
     
     [super viewDidLoad];
@@ -39,11 +39,11 @@
 }
 
 //Event printer function
--(void)printEvents:(NSArray*)eventArray
+-(void)printEvents:(NSMutableString*)eventList
 {
     // Display text in UITextView
-    NSString *newString = [[eventArray valueForKey:@"description"] componentsJoinedByString:@""];
-    textView.text = newString;
+    [eventString appendString:eventList];
+    textView.text = eventString;
     
 }
 
@@ -61,9 +61,9 @@
     }
 }
 
--(void)didClose:(NSArray*)eventArray
+-(void)didClose:(NSMutableString*)eventList
 {
-    [self printEvents:eventArray];
+    [self printEvents:eventList];
 }
 
 @end

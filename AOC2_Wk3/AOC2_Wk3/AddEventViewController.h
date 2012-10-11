@@ -11,7 +11,7 @@
 @protocol eventViewDelegate <NSObject>
 
 @required
--(void)didClose:(NSArray*)eventArray;
+-(void)didClose:(NSMutableString*)eventList;
 
 @end
 
@@ -21,7 +21,7 @@
     IBOutlet UIDatePicker *datePicker;
     IBOutlet UITextField *textField;
     NSMutableString *startOfText;
-    NSMutableArray *eventList;
+    NSMutableString *eventList;
     NSDate *chosenDate;
     NSString *dateString;
     id<eventViewDelegate> delegate;

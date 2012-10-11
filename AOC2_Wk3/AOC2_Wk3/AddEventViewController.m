@@ -65,7 +65,7 @@
     
     //Default Values
     NSMutableString *startOfText = [[NSMutableString alloc] initWithString:@"New Event: "];
-    eventList = [[NSMutableArray alloc] init];
+    eventList = [[NSMutableString alloc] init];
     NSString *textToAdd = textField.text;
     
     //Format Date
@@ -78,8 +78,8 @@
     [startOfText appendString:textToAdd];
     [startOfText appendString:dateString];
 
-    //Add combined text to array for later print out
-    [eventList addObject:startOfText];
+    //Add combined text to another string for later print out
+    [eventList appendFormat:@"%@\r",startOfText];
    
     //Rerun event printer function
     if (delegate != nil)

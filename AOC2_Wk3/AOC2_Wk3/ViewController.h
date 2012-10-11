@@ -12,10 +12,11 @@
 @interface ViewController : UIViewController <eventViewDelegate>
 {
     IBOutlet UITextView *textView;
+    NSMutableString *eventString;
     
 }
 
 -(IBAction)onClick:(id)sender;
--(void)printEvents:(NSArray*)eventArray;
+-(void)printEvents:(NSMutableString*)eventList;
 
 @end
