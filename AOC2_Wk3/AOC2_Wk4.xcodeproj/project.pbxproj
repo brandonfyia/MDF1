@@ -20,14 +20,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FBEA49BC162390C900BE102C /* AOC2_Wk3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOC2_Wk3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBEA49BC162390C900BE102C /* AOC2_Wk4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOC2_Wk4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBEA49C0162390C900BE102C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FBEA49C2162390C900BE102C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FBEA49C4162390C900BE102C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FBEA49C8162390C900BE102C /* AOC2_Wk3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOC2_Wk3-Info.plist"; sourceTree = "<group>"; };
+		FBEA49C8162390C900BE102C /* AOC2_Wk4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOC2_Wk4-Info.plist"; sourceTree = "<group>"; };
 		FBEA49CA162390C900BE102C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FBEA49CC162390C900BE102C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FBEA49CE162390C900BE102C /* AOC2_Wk3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AOC2_Wk3-Prefix.pch"; sourceTree = "<group>"; };
+		FBEA49CE162390C900BE102C /* AOC2_Wk4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AOC2_Wk4-Prefix.pch"; sourceTree = "<group>"; };
 		FBEA49CF162390C900BE102C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBEA49D0162390C900BE102C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FBEA49D2162390C900BE102C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		FBEA49B1162390C900BE102C = {
 			isa = PBXGroup;
 			children = (
-				FBEA49C6162390C900BE102C /* AOC2_Wk3 */,
+				FBEA49C6162390C900BE102C /* AOC2_Wk4 */,
 				FBEA49BF162390C900BE102C /* Frameworks */,
 				FBEA49BD162390C900BE102C /* Products */,
 			);
@@ -64,7 +64,7 @@
 		FBEA49BD162390C900BE102C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FBEA49BC162390C900BE102C /* AOC2_Wk3.app */,
+				FBEA49BC162390C900BE102C /* AOC2_Wk4.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,7 +79,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FBEA49C6162390C900BE102C /* AOC2_Wk3 */ = {
+		FBEA49C6162390C900BE102C /* AOC2_Wk4 */ = {
 			isa = PBXGroup;
 			children = (
 				FBEA49CF162390C900BE102C /* AppDelegate.h */,
@@ -92,16 +92,17 @@
 				FBEA49E11623936F00BE102C /* AddEventViewController.m */,
 				FBEA49E21623936F00BE102C /* AddEventViewController.xib */,
 			);
+			name = AOC2_Wk4;
 			path = AOC2_Wk3;
 			sourceTree = "<group>";
 		};
 		FBEA49C7162390C900BE102C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FBEA49C8162390C900BE102C /* AOC2_Wk3-Info.plist */,
+				FBEA49C8162390C900BE102C /* AOC2_Wk4-Info.plist */,
 				FBEA49C9162390C900BE102C /* InfoPlist.strings */,
 				FBEA49CC162390C900BE102C /* main.m */,
-				FBEA49CE162390C900BE102C /* AOC2_Wk3-Prefix.pch */,
+				FBEA49CE162390C900BE102C /* AOC2_Wk4-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,9 +110,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FBEA49BB162390C900BE102C /* AOC2_Wk3 */ = {
+		FBEA49BB162390C900BE102C /* AOC2_Wk4 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FBEA49DA162390C900BE102C /* Build configuration list for PBXNativeTarget "AOC2_Wk3" */;
+			buildConfigurationList = FBEA49DA162390C900BE102C /* Build configuration list for PBXNativeTarget "AOC2_Wk4" */;
 			buildPhases = (
 				FBEA49B8162390C900BE102C /* Sources */,
 				FBEA49B9162390C900BE102C /* Frameworks */,
@@ -121,9 +122,9 @@
 			);
 			dependencies = (
 			);
-			name = AOC2_Wk3;
+			name = AOC2_Wk4;
 			productName = AOC2_Wk3;
-			productReference = FBEA49BC162390C900BE102C /* AOC2_Wk3.app */;
+			productReference = FBEA49BC162390C900BE102C /* AOC2_Wk4.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -135,7 +136,7 @@
 				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "Brandon Sease";
 			};
-			buildConfigurationList = FBEA49B6162390C900BE102C /* Build configuration list for PBXProject "AOC2_Wk3" */;
+			buildConfigurationList = FBEA49B6162390C900BE102C /* Build configuration list for PBXProject "AOC2_Wk4" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -147,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FBEA49BB162390C900BE102C /* AOC2_Wk3 */,
+				FBEA49BB162390C900BE102C /* AOC2_Wk4 */,
 			);
 		};
 /* End PBXProject section */
@@ -250,9 +251,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AOC2_Wk3/AOC2_Wk3-Prefix.pch";
-				INFOPLIST_FILE = "AOC2_Wk3/AOC2_Wk3-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "AOC2_Wk3/AOC2_Wk4-Prefix.pch";
+				INFOPLIST_FILE = "AOC2_Wk3/AOC2_Wk4-Info.plist";
+				PRODUCT_NAME = AOC2_Wk4;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -261,9 +262,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AOC2_Wk3/AOC2_Wk3-Prefix.pch";
-				INFOPLIST_FILE = "AOC2_Wk3/AOC2_Wk3-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "AOC2_Wk3/AOC2_Wk4-Prefix.pch";
+				INFOPLIST_FILE = "AOC2_Wk3/AOC2_Wk4-Info.plist";
+				PRODUCT_NAME = AOC2_Wk4;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -271,7 +272,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FBEA49B6162390C900BE102C /* Build configuration list for PBXProject "AOC2_Wk3" */ = {
+		FBEA49B6162390C900BE102C /* Build configuration list for PBXProject "AOC2_Wk4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FBEA49D8162390C900BE102C /* Debug */,
@@ -280,13 +281,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FBEA49DA162390C900BE102C /* Build configuration list for PBXNativeTarget "AOC2_Wk3" */ = {
+		FBEA49DA162390C900BE102C /* Build configuration list for PBXNativeTarget "AOC2_Wk4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FBEA49DB162390C900BE102C /* Debug */,
 				FBEA49DC162390C900BE102C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
