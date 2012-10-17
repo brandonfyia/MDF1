@@ -76,11 +76,15 @@
         NSString *textToAdd = textField.text;
         
         //Format Date
+        if (chosenDate == nil)
+        {
+            chosenDate = [NSDate date];
+        }
         NSDateFormatter *formattedDate = [[NSDateFormatter alloc] init];
         [formattedDate setFormatterBehavior:NSDateFormatterBehavior10_4];
         [formattedDate setDateFormat:@" dd MMM, yyyy 'at' hh:mm a"];
         dateString = [formattedDate stringFromDate:chosenDate];
-        
+
         //combine default opening with inputed text and date
         [startOfText appendString:textToAdd];
         [startOfText appendString:dateString];
