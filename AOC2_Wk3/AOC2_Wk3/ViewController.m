@@ -16,17 +16,46 @@
 
 @implementation ViewController
 
+//Save button
+-(IBAction)onClick:(id)sender
+{
+    //Create default save function
+    NSUserDefaults *savedEvents = [NSUserDefaults standardUserDefaults];
+    if (savedEvents != nil)
+    {
+        //String to hold info
+        NSString *savedEventsString = textView.text;
+        //Set string to be saved
+        [savedEvents setObject:savedEventsString forKey:@"events"];
+        //Save string
+        [savedEvents synchronize];
+    }
+}
 
 - (void)viewDidLoad
 {
+    //Event List default
+    eventString = [[NSMutableString alloc] init];
+    
+    
+    //Load back in saved info
+    NSUserDefaults *savedEvents = [NSUserDefaults standardUserDefaults];
+    if (savedEvents != nil)
+    {
+        NSMutableString *savedEventsString = [savedEvents objectForKey:@"events"];
+        if (savedEventsString != nil)
+        {
+            [eventString appendString:savedEventsString];
+            textView.text = eventString;
+        }
+        
+    }
+    
+    
     //Swipe gesture setup
     rightSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
     rightSwiper.direction = UISwipeGestureRecognizerDirectionRight;
     [swipeRightLable addGestureRecognizer:rightSwiper];
-    
-    //Event List default
-    eventString = [[NSMutableString alloc] init];    
-    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -53,7 +82,7 @@
 }
 
 
-//New even button
+//Swipe for new event view
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
 {
     if (recognizer.direction == UISwipeGestureRecognizerDirectionRight)
@@ -65,7 +94,7 @@
             addView.delegate = self;
             //Show add event view
             addView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-            [self presentViewController:addView animated:TRUE completion:nil ];
+            [self presentViewController:addView animated:TRUE completion:nil];
         }
     }
 

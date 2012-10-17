@@ -78,7 +78,7 @@
         //Format Date
         NSDateFormatter *formattedDate = [[NSDateFormatter alloc] init];
         [formattedDate setFormatterBehavior:NSDateFormatterBehavior10_4];
-        [formattedDate setDateFormat:@" dd MMM, yyyy 'at' hh:mm a z"];
+        [formattedDate setDateFormat:@" dd MMM, yyyy 'at' hh:mm a"];
         dateString = [formattedDate stringFromDate:chosenDate];
         
         //combine default opening with inputed text and date

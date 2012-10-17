@@ -43,7 +43,7 @@
 						<string key="NSFrame">{{0, 58}, {320, 336}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="686654039"/>
+						<reference key="NSNextKeyView" ref="24115840"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<object class="NSColor" key="IBUIBackgroundColor" id="487545256">
 							<int key="NSColorSpace">1</int>
@@ -74,7 +74,7 @@
 						<string key="NSFrame">{{20, 9}, {145, 37}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="566448379"/>
+						<reference key="NSNextKeyView" ref="365702581"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -100,7 +100,7 @@
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBUILabel" id="686654039">
+					<object class="IBUILabel" id="24115840">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{0, 394}, {320, 66}}</string>
@@ -128,7 +128,7 @@
 						</object>
 						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 					</object>
-					<object class="IBUIButton" id="566448379">
+					<object class="IBUIButton" id="365702581">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{218, 9}, {82, 37}}</string>
@@ -200,18 +200,18 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">swipeRightLable</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="686654039"/>
+						<reference key="destination" ref="24115840"/>
 					</object>
 					<int key="connectionID">16</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">onClick:</string>
-						<reference key="source" ref="566448379"/>
+						<reference key="source" ref="365702581"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
-					<int key="connectionID">15</int>
+					<int key="connectionID">17</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -238,8 +238,8 @@
 						<reference key="object" ref="774585933"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="276623933"/>
-							<reference ref="686654039"/>
-							<reference ref="566448379"/>
+							<reference ref="24115840"/>
+							<reference ref="365702581"/>
 							<reference ref="897320703"/>
 						</array>
 						<reference key="parent" ref="0"/>
@@ -256,12 +256,12 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">13</int>
-						<reference key="object" ref="686654039"/>
+						<reference key="object" ref="24115840"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">14</int>
-						<reference key="object" ref="566448379"/>
+						<reference key="object" ref="365702581"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 				</array>
@@ -281,7 +281,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">16</int>
+			<int key="maxID">17</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

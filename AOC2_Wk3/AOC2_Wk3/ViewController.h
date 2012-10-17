@@ -17,7 +17,7 @@
     UISwipeGestureRecognizer *rightSwiper;
     
 }
-
+-(IBAction)onClick:(id)sender;
 -(void)printEvents:(NSMutableString*)eventList;
 
 @end
