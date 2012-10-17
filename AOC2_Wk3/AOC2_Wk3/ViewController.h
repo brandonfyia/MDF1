@@ -13,10 +13,11 @@
 {
     IBOutlet UITextView *textView;
     NSMutableString *eventString;
+    IBOutlet UILabel *swipeRightLable;
+    UISwipeGestureRecognizer *rightSwiper;
     
 }
 
--(IBAction)onClick:(id)sender;
 -(void)printEvents:(NSMutableString*)eventList;
 
 @end

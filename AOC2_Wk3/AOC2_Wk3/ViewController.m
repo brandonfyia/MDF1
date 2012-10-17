@@ -19,6 +19,11 @@
 
 - (void)viewDidLoad
 {
+    //Swipe gesture setup
+    rightSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    rightSwiper.direction = UISwipeGestureRecognizerDirectionRight;
+    [swipeRightLable addGestureRecognizer:rightSwiper];
+    
     //Event List default
     eventString = [[NSMutableString alloc] init];    
     
@@ -49,16 +54,20 @@
 
 
 //New even button
--(IBAction)onClick:(id)sender
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
 {
-    //Init add event view
-    AddEventViewController *addView = [[AddEventViewController alloc] initWithNibName:@"AddEventViewController" bundle:nil];
-    if (addView !=nil)
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionRight)
     {
-        addView.delegate = self;
-        //Show add event view
-        [self presentModalViewController:addView animated:TRUE];
+        //Init add event view
+        AddEventViewController *addView = [[AddEventViewController alloc] initWithNibName:@"AddEventViewController" bundle:nil];
+        if (addView !=nil)
+        {
+            addView.delegate = self;
+            //Show add event view
+            [self presentModalViewController:addView animated:TRUE];
+        }
     }
+
 }
 
 -(void)didClose:(NSMutableString*)eventList

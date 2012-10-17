@@ -28,6 +28,11 @@
 
 - (void)viewDidLoad
 {
+    //Swipe gesture setup
+    leftSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    leftSwiper.direction = UISwipeGestureRecognizerDirectionLeft;
+    [swipeLeftLable addGestureRecognizer:leftSwiper];
+    
     //Set Date Picker defaults
     [datePicker setTimeZone:[NSTimeZone localTimeZone]];
     [datePicker setMinimumDate:[NSDate date]];
@@ -59,39 +64,40 @@
 }
 
 //Save button
--(IBAction)onClose:(id)sender
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
 {
-    //Save event text
-    
-    //Default Values
-    NSMutableString *startOfText = [[NSMutableString alloc] initWithString:@"New Event: "];
-    eventList = [[NSMutableString alloc] init];
-    NSString *textToAdd = textField.text;
-    
-    //Format Date
-    NSDateFormatter *formattedDate = [[NSDateFormatter alloc] init];
-    [formattedDate setFormatterBehavior:NSDateFormatterBehavior10_4];
-    [formattedDate setDateFormat:@" dd MMM, yyyy 'at' hh:mm a z"];
-    dateString = [formattedDate stringFromDate:chosenDate];
-    
-    //combine default opening with inputed text and date
-    [startOfText appendString:textToAdd];
-    [startOfText appendString:dateString];
-
-    //Add combined text to another string for later print out
-    [eventList appendFormat:@"%@\r",startOfText];
-   
-    //Rerun event printer function
-    if (delegate != nil)
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft)
     {
-        [delegate didClose:eventList];
-    }
-    
-    //Close Add event view
-    [self dismissModalViewControllerAnimated:TRUE];
+        //Save event text
+        
+        //Default Values
+        NSMutableString *startOfText = [[NSMutableString alloc] initWithString:@"New Event: "];
+        eventList = [[NSMutableString alloc] init];
+        NSString *textToAdd = textField.text;
+        
+        //Format Date
+        NSDateFormatter *formattedDate = [[NSDateFormatter alloc] init];
+        [formattedDate setFormatterBehavior:NSDateFormatterBehavior10_4];
+        [formattedDate setDateFormat:@" dd MMM, yyyy 'at' hh:mm a z"];
+        dateString = [formattedDate stringFromDate:chosenDate];
+        
+        //combine default opening with inputed text and date
+        [startOfText appendString:textToAdd];
+        [startOfText appendString:dateString];
+        
+        //Add combined text to another string for later print out
+        [eventList appendFormat:@"%@\r",startOfText];
+        
+        //Rerun event printer function
+        if (delegate != nil)
+        {
+            [delegate didClose:eventList];
+        }
+        
+        //Close Add event view
+        [self dismissModalViewControllerAnimated:TRUE];
 
-    
-   
+    }
 }
 
 //Close Keyboard

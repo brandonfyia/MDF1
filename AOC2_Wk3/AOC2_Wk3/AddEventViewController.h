@@ -25,11 +25,12 @@
     NSDate *chosenDate;
     NSString *dateString;
     id<eventViewDelegate> delegate;
+    IBOutlet UILabel *swipeLeftLable;
+    UISwipeGestureRecognizer *leftSwiper;
 }
 
 @property (strong) id<eventViewDelegate> delegate;
 
--(IBAction)onClose:(id)sender;
 -(IBAction)onChange:(id)sender;
 -(IBAction)onClick:(id)sender;
 
