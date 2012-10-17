@@ -95,8 +95,7 @@
         }
         
         //Close Add event view
-        [self dismissModalViewControllerAnimated:TRUE];
-
+        [self dismissViewControllerAnimated:TRUE completion:nil];
     }
 }
 

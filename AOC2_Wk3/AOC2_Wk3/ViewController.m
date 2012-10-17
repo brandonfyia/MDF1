@@ -64,7 +64,8 @@
         {
             addView.delegate = self;
             //Show add event view
-            [self presentModalViewController:addView animated:TRUE];
+            addView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+            [self presentViewController:addView animated:TRUE completion:nil ];
         }
     }
 
