@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class DataLayer;
+
 @interface ViewController : UIViewController
+{
+    NSArray *list;
+    DataLayer *dataLayer;
+    
+    IBOutlet UITableView *tableView;
+}
 
 @end
