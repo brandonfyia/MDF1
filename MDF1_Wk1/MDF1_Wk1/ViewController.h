@@ -12,10 +12,11 @@
 
 @interface ViewController : UIViewController
 {
-    NSArray *list;
+    NSMutableArray *list;
     DataLayer *dataLayer;
     
     IBOutlet UITableView *tableView;
 }
+-(IBAction)onEdit:(id)sender;
 
 @end

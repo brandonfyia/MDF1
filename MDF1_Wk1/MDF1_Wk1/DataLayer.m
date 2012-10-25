@@ -11,10 +11,15 @@
 @implementation DataLayer
 
 //JStores my currently static data
--(NSArray*)getList
+-(NSMutableArray*)getList
 {
-    list = [[NSArray alloc] initWithObjects:@"Car", @"Bicycle", @"Cat", @"Dog", @"Jewelery", @"BB Gun", @"Video Game", @"Golf Clubs", @"Nintendo", @"Space Ship", @"Remote Controlled Car", @"Monopoly", @"Hungry Hungry Hippos", @"Skate Board", @"iPad", @"Mobile Development Degree", @"New House", @"Android Phone", @"Shark With Lazer Attached", @"More Loot", nil];
+    list = [[NSMutableArray alloc] initWithObjects:@"Car", @"Bicycle", @"Cat", @"Dog", @"Jewelery", @"BB Gun", @"Video Game", @"Golf Clubs", @"Nintendo", @"Space Ship", @"Remote Controlled Car", @"Monopoly", @"Hungry Hungry Hippos", @"Skate Board", @"iPad", @"Mobile Development Degree", @"New House", @"Android Phone", @"Shark With Lazer Attached", @"More Loot", nil];
     return list;
 }
+
+//This is so I can quickly replace my list after testing the delete function
+//
+//    list = [[NSArray alloc] initWithObjects:@"Car", @"Bicycle", @"Cat", @"Dog", @"Jewelery", @"BB Gun", @"Video Game", @"Golf Clubs", @"Nintendo", @"Space Ship", @"Remote Controlled Car", @"Monopoly", @"Hungry Hungry Hippos", @"Skate Board", @"iPad", @"Mobile Development Degree", @"New House", @"Android Phone", @"Shark With Lazer Attached", @"More Loot", nil];
+//
 
 @end

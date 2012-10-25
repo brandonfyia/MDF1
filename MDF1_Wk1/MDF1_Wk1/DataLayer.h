@@ -10,9 +10,9 @@
 
 @interface DataLayer : NSObject
 {
-    NSArray *list;
+    NSMutableArray *list;
 }
 
--(NSArray*)getList;
+-(NSMutableArray*)getList;
 
 @end
