@@ -46,7 +46,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    cell.textLabel.text = @"Hello";
+    cell.textLabel.text = [list objectAtIndex:indexPath.row];
     
     return cell;
 }

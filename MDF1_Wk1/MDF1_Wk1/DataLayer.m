@@ -13,7 +13,7 @@
 //JStores my currently static data
 -(NSArray*)getList
 {
-    list = [[NSArray alloc] initWithObjects:@"Car", @"Bicycle", @"Cat", @"Dog", @"Jewelery", @"BB Gun", @"Vide Game", @"Golf Clubs", @"Nintendo", @"Space Ship", @"Remote Controlled Car", @"Monopoly", @"Hungry Hungry Hippos", @"Skate Board", @"iPad", @"Mobile Development Degree", @"New House", @"Android Phone", @"Shark With Lazer Attached", @"More Loot", nil];
+    list = [[NSArray alloc] initWithObjects:@"Car", @"Bicycle", @"Cat", @"Dog", @"Jewelery", @"BB Gun", @"Video Game", @"Golf Clubs", @"Nintendo", @"Space Ship", @"Remote Controlled Car", @"Monopoly", @"Hungry Hungry Hippos", @"Skate Board", @"iPad", @"Mobile Development Degree", @"New House", @"Android Phone", @"Shark With Lazer Attached", @"More Loot", nil];
     return list;
 }
 
