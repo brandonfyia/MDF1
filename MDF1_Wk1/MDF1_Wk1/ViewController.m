@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DataLayer.h"
+#import "CustomTableCell.h"
 
 @interface ViewController ()
 
@@ -34,7 +35,7 @@
 }
 
 
-//Create List view perimeters 
+//Create cells / List view perimeters 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     //set list legnth to array legnth
@@ -44,12 +45,24 @@
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
     if (cell == nil)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+//        NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"CustomCellView" owner:nil options:nil];
+//       
+//        for (UIView *view in views)
+//        {
+//            if ([view isKindOfClass:[CustomTableCell class]])
+//            {
+//                cell = (CustomTableCell*)view;
+//                
+//                //cell.textLabel.text = [list objectAtIndex:indexPath.row];
+//
+//            }
+//        }
+        cell.textLabel.text = [list objectAtIndex:indexPath.row];
     }
-    //Send my array from data layer to list
-    cell.textLabel.text = [list objectAtIndex:indexPath.row];
     
     return cell;
 }
