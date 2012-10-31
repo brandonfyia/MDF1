@@ -11,6 +11,14 @@
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
 
-@interface DetailViewController : UIViewController <detailViewDelegate>
+
+
+@interface DetailViewController : UIViewController
+{
+    NSString *itemDetail;
+    IBOutlet UITextView *textView;
+}
+
+@property(nonatomic, retain)NSString *itemDetails;
 
 @end

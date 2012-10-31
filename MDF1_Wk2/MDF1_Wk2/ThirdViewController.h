@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ThirdViewController : UIViewController <UITableViewDelegate>
+@interface ThirdViewController : UIViewController
 {
     IBOutlet UITableView *tableView;
     NSArray *list;

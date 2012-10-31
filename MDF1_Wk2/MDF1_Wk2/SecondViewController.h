@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController <UITableViewDelegate>
+@interface SecondViewController : UIViewController
 {
     IBOutlet UITableView *tableView;
     NSArray *list;
