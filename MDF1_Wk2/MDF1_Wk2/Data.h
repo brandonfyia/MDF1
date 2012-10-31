@@ -10,4 +10,6 @@
 
 @interface Data : NSObject
 
+-(NSArray*)getArray;
+
 @end

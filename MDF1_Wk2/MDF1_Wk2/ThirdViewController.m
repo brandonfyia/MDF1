@@ -8,6 +8,7 @@
 
 #import "ThirdViewController.h"
 #import "DetailViewController.h"
+#import "Data.h"
 
 @interface ThirdViewController ()
 
@@ -27,6 +28,8 @@
 
 - (void)viewDidLoad
 {
+    Data *data = [[Data alloc] init];
+    list = [data getArray];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -54,8 +57,8 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    
-    cell.textLabel.text = @"hello";
+    NSInteger actualRow = indexPath.row + 6;
+    cell.textLabel.text = [[list objectAtIndex:actualRow]objectAtIndex:0];
     
     return cell;
 }

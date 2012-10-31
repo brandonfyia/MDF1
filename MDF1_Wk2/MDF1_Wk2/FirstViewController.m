@@ -8,6 +8,7 @@
 
 #import "FirstViewController.h"
 #import "DetailViewController.h"
+#import "Data.h"
 
 @interface FirstViewController ()
 
@@ -27,6 +28,8 @@
 							
 - (void)viewDidLoad
 {
+    Data *data = [[Data alloc] init];
+    list = [data getArray];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -54,8 +57,7 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    
-    cell.textLabel.text = @"hello";
+    cell.textLabel.text = [[list objectAtIndex:indexPath.row]objectAtIndex:0];
     
     return cell;
 }

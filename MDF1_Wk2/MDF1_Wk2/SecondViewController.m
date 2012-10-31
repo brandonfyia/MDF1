@@ -8,6 +8,7 @@
 
 #import "SecondViewController.h"
 #import "DetailViewController.h"
+#import "Data.h"
 
 @interface SecondViewController ()
 
@@ -27,6 +28,8 @@
 							
 - (void)viewDidLoad
 {
+    Data *data = [[Data alloc] init];
+    list = [data getArray];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -54,11 +57,12 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    
-    cell.textLabel.text = @"hello";
+    NSInteger actualRow = indexPath.row + 3;
+    cell.textLabel.text = [[list objectAtIndex:actualRow]objectAtIndex:0];
     
     return cell;
 }
+
 
 //Click for details
 -(IBAction)onClick:(id)sender

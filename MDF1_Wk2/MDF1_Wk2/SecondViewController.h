@@ -11,6 +11,7 @@
 @interface SecondViewController : UIViewController
 {
     IBOutlet UITableView *tableView;
+    NSArray *list;
 }
 
 -(IBAction)onClick:(id)sender;
