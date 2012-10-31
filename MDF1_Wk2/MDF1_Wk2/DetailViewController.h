@@ -13,7 +13,7 @@
 
 
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <UITableViewDelegate>
 {
     NSString *itemDetail;
     IBOutlet UITextView *textView;

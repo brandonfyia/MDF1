@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController <UITableViewDelegate>
 {
     IBOutlet UITableView *tableView;
     NSArray *list;
 }
 
--(IBAction)onClick:(id)sender;
 
 @end
