@@ -10,4 +10,5 @@
 
 @interface FirstViewController : UIViewController
 
+-(IBAction)onClick:(id)sender;
 @end

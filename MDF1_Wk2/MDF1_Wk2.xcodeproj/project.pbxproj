@@ -26,6 +26,9 @@
 		FB683C091640AE8800840A83 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB683C071640AE8800840A83 /* SecondViewController.xib */; };
 		FB683C121640AEBD00840A83 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB683C101640AEBD00840A83 /* ThirdViewController.m */; };
 		FB683C131640AEBD00840A83 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB683C111640AEBD00840A83 /* ThirdViewController.xib */; };
+		FB683C171640B22A00840A83 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB683C151640B22A00840A83 /* DetailViewController.m */; };
+		FB683C181640B22A00840A83 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB683C161640B22A00840A83 /* DetailViewController.xib */; };
+		FB683C1B1640B34200840A83 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = FB683C1A1640B34200840A83 /* Data.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,11 @@
 		FB683C0F1640AEBD00840A83 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		FB683C101640AEBD00840A83 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		FB683C111640AEBD00840A83 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		FB683C141640B22A00840A83 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		FB683C151640B22A00840A83 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FB683C161640B22A00840A83 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		FB683C191640B34200840A83 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		FB683C1A1640B34200840A83 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,10 +121,15 @@
 				FB683C001640AE8800840A83 /* second.png */,
 				FB683C021640AE8800840A83 /* second@2x.png */,
 				FB683C071640AE8800840A83 /* SecondViewController.xib */,
-				FB683BE51640AE8800840A83 /* Supporting Files */,
 				FB683C0F1640AEBD00840A83 /* ThirdViewController.h */,
 				FB683C101640AEBD00840A83 /* ThirdViewController.m */,
 				FB683C111640AEBD00840A83 /* ThirdViewController.xib */,
+				FB683C141640B22A00840A83 /* DetailViewController.h */,
+				FB683C151640B22A00840A83 /* DetailViewController.m */,
+				FB683C161640B22A00840A83 /* DetailViewController.xib */,
+				FB683C191640B34200840A83 /* Data.h */,
+				FB683C1A1640B34200840A83 /* Data.m */,
+				FB683BE51640AE8800840A83 /* Supporting Files */,
 			);
 			path = MDF1_Wk2;
 			sourceTree = "<group>";
@@ -197,6 +210,7 @@
 				FB683C061640AE8800840A83 /* FirstViewController.xib in Resources */,
 				FB683C091640AE8800840A83 /* SecondViewController.xib in Resources */,
 				FB683C131640AEBD00840A83 /* ThirdViewController.xib in Resources */,
+				FB683C181640B22A00840A83 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +226,8 @@
 				FB683BF81640AE8800840A83 /* FirstViewController.m in Sources */,
 				FB683BFF1640AE8800840A83 /* SecondViewController.m in Sources */,
 				FB683C121640AEBD00840A83 /* ThirdViewController.m in Sources */,
+				FB683C171640B22A00840A83 /* DetailViewController.m in Sources */,
+				FB683C1B1640B34200840A83 /* Data.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

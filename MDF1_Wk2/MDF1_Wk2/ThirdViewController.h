@@ -10,4 +10,6 @@
 
 @interface ThirdViewController : UIViewController
 
+-(IBAction)onClick:(id)sender;
+
 @end

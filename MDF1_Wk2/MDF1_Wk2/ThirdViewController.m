@@ -7,6 +7,7 @@
 //
 
 #import "ThirdViewController.h"
+#import "DetailViewController.h"
 
 @interface ThirdViewController ()
 
@@ -35,6 +36,15 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)onClick:(id)sender
+{
+    DetailViewController *detailView = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+    if (detailView != nil)
+    {
+        [self.navigationController pushViewController:detailView animated:TRUE];
+    }
 }
 
 @end

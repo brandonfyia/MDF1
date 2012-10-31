@@ -10,4 +10,6 @@
 
 @interface SecondViewController : UIViewController
 
+-(IBAction)onClick:(id)sender;
+
 @end
