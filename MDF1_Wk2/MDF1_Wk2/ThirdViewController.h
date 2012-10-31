@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ThirdViewController : UIViewController
+{
+    IBOutlet UITableView *tableView;
+}
 
 -(IBAction)onClick:(id)sender;
 

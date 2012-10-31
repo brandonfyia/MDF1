@@ -27,12 +27,16 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    //First View Controller
     UIViewController *viewController1 = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
     UINavigationController *navController1 = [[UINavigationController alloc] initWithRootViewController:viewController1];
+    //Second View Controller
     UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
     UINavigationController *navController2 = [[UINavigationController alloc] initWithRootViewController:viewController2];
+    //Third View Controller
     UIViewController *viewController3 = [[[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil] autorelease];
     UINavigationController *navController3 = [[UINavigationController alloc] initWithRootViewController:viewController3];
+    
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
     self.tabBarController.viewControllers = @[navController1, navController2, navController3];
     self.window.rootViewController = self.tabBarController;

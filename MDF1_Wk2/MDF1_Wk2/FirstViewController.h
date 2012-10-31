@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface FirstViewController : UIViewController
+{
+    IBOutlet UITableView *tableView;
+}
 
 -(IBAction)onClick:(id)sender;
 @end
