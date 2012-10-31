@@ -7,102 +7,130 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB683BAD1640A10100840A83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB683BAC1640A10100840A83 /* UIKit.framework */; };
-		FB683BAF1640A10100840A83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB683BAE1640A10100840A83 /* Foundation.framework */; };
-		FB683BB11640A10100840A83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB683BB01640A10100840A83 /* CoreGraphics.framework */; };
-		FB683BB71640A10100840A83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB683BB51640A10100840A83 /* InfoPlist.strings */; };
-		FB683BB91640A10100840A83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB683BB81640A10100840A83 /* main.m */; };
-		FB683BBD1640A10100840A83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB683BBC1640A10100840A83 /* AppDelegate.m */; };
-		FB683BBF1640A10100840A83 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683BBE1640A10100840A83 /* Default.png */; };
-		FB683BC11640A10100840A83 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683BC01640A10100840A83 /* Default@2x.png */; };
-		FB683BC31640A10100840A83 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683BC21640A10100840A83 /* Default-568h@2x.png */; };
-		FB683BC61640A10100840A83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB683BC51640A10100840A83 /* ViewController.m */; };
-		FB683BC91640A10100840A83 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB683BC71640A10100840A83 /* ViewController.xib */; };
+		FB683BDF1640AE8800840A83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB683BDE1640AE8800840A83 /* UIKit.framework */; };
+		FB683BE11640AE8800840A83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB683BE01640AE8800840A83 /* Foundation.framework */; };
+		FB683BE31640AE8800840A83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB683BE21640AE8800840A83 /* CoreGraphics.framework */; };
+		FB683BE91640AE8800840A83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB683BE71640AE8800840A83 /* InfoPlist.strings */; };
+		FB683BEB1640AE8800840A83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB683BEA1640AE8800840A83 /* main.m */; };
+		FB683BEF1640AE8800840A83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB683BEE1640AE8800840A83 /* AppDelegate.m */; };
+		FB683BF11640AE8800840A83 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683BF01640AE8800840A83 /* Default.png */; };
+		FB683BF31640AE8800840A83 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683BF21640AE8800840A83 /* Default@2x.png */; };
+		FB683BF51640AE8800840A83 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683BF41640AE8800840A83 /* Default-568h@2x.png */; };
+		FB683BF81640AE8800840A83 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB683BF71640AE8800840A83 /* FirstViewController.m */; };
+		FB683BFA1640AE8800840A83 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683BF91640AE8800840A83 /* first.png */; };
+		FB683BFC1640AE8800840A83 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683BFB1640AE8800840A83 /* first@2x.png */; };
+		FB683BFF1640AE8800840A83 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB683BFE1640AE8800840A83 /* SecondViewController.m */; };
+		FB683C011640AE8800840A83 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683C001640AE8800840A83 /* second.png */; };
+		FB683C031640AE8800840A83 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683C021640AE8800840A83 /* second@2x.png */; };
+		FB683C061640AE8800840A83 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB683C041640AE8800840A83 /* FirstViewController.xib */; };
+		FB683C091640AE8800840A83 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB683C071640AE8800840A83 /* SecondViewController.xib */; };
+		FB683C121640AEBD00840A83 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB683C101640AEBD00840A83 /* ThirdViewController.m */; };
+		FB683C131640AEBD00840A83 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB683C111640AEBD00840A83 /* ThirdViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FB683BA81640A10100840A83 /* MDF1_Wk2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDF1_Wk2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB683BAC1640A10100840A83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		FB683BAE1640A10100840A83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FB683BB01640A10100840A83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FB683BB41640A10100840A83 /* MDF1_Wk2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MDF1_Wk2-Info.plist"; sourceTree = "<group>"; };
-		FB683BB61640A10100840A83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FB683BB81640A10100840A83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FB683BBA1640A10100840A83 /* MDF1_Wk2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDF1_Wk2-Prefix.pch"; sourceTree = "<group>"; };
-		FB683BBB1640A10100840A83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FB683BBC1640A10100840A83 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FB683BBE1640A10100840A83 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		FB683BC01640A10100840A83 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		FB683BC21640A10100840A83 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		FB683BC41640A10100840A83 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FB683BC51640A10100840A83 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FB683BC81640A10100840A83 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		FB683BDA1640AE8800840A83 /* MDF1_Wk2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDF1_Wk2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB683BDE1640AE8800840A83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FB683BE01640AE8800840A83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FB683BE21640AE8800840A83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FB683BE61640AE8800840A83 /* MDF1_Wk2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MDF1_Wk2-Info.plist"; sourceTree = "<group>"; };
+		FB683BE81640AE8800840A83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FB683BEA1640AE8800840A83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB683BEC1640AE8800840A83 /* MDF1_Wk2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDF1_Wk2-Prefix.pch"; sourceTree = "<group>"; };
+		FB683BED1640AE8800840A83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB683BEE1640AE8800840A83 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB683BF01640AE8800840A83 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FB683BF21640AE8800840A83 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FB683BF41640AE8800840A83 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FB683BF61640AE8800840A83 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		FB683BF71640AE8800840A83 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		FB683BF91640AE8800840A83 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		FB683BFB1640AE8800840A83 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		FB683BFD1640AE8800840A83 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		FB683BFE1640AE8800840A83 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		FB683C001640AE8800840A83 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		FB683C021640AE8800840A83 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		FB683C051640AE8800840A83 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
+		FB683C081640AE8800840A83 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		FB683C0F1640AEBD00840A83 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		FB683C101640AEBD00840A83 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		FB683C111640AEBD00840A83 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FB683BA51640A10100840A83 /* Frameworks */ = {
+		FB683BD71640AE8800840A83 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB683BAD1640A10100840A83 /* UIKit.framework in Frameworks */,
-				FB683BAF1640A10100840A83 /* Foundation.framework in Frameworks */,
-				FB683BB11640A10100840A83 /* CoreGraphics.framework in Frameworks */,
+				FB683BDF1640AE8800840A83 /* UIKit.framework in Frameworks */,
+				FB683BE11640AE8800840A83 /* Foundation.framework in Frameworks */,
+				FB683BE31640AE8800840A83 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FB683B9D1640A10100840A83 = {
+		FB683BCF1640AE8800840A83 = {
 			isa = PBXGroup;
 			children = (
-				FB683BB21640A10100840A83 /* MDF1_Wk2 */,
-				FB683BAB1640A10100840A83 /* Frameworks */,
-				FB683BA91640A10100840A83 /* Products */,
+				FB683BE41640AE8800840A83 /* MDF1_Wk2 */,
+				FB683BDD1640AE8800840A83 /* Frameworks */,
+				FB683BDB1640AE8800840A83 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FB683BA91640A10100840A83 /* Products */ = {
+		FB683BDB1640AE8800840A83 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB683BA81640A10100840A83 /* MDF1_Wk2.app */,
+				FB683BDA1640AE8800840A83 /* MDF1_Wk2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FB683BAB1640A10100840A83 /* Frameworks */ = {
+		FB683BDD1640AE8800840A83 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FB683BAC1640A10100840A83 /* UIKit.framework */,
-				FB683BAE1640A10100840A83 /* Foundation.framework */,
-				FB683BB01640A10100840A83 /* CoreGraphics.framework */,
+				FB683BDE1640AE8800840A83 /* UIKit.framework */,
+				FB683BE01640AE8800840A83 /* Foundation.framework */,
+				FB683BE21640AE8800840A83 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FB683BB21640A10100840A83 /* MDF1_Wk2 */ = {
+		FB683BE41640AE8800840A83 /* MDF1_Wk2 */ = {
 			isa = PBXGroup;
 			children = (
-				FB683BBB1640A10100840A83 /* AppDelegate.h */,
-				FB683BBC1640A10100840A83 /* AppDelegate.m */,
-				FB683BC41640A10100840A83 /* ViewController.h */,
-				FB683BC51640A10100840A83 /* ViewController.m */,
-				FB683BC71640A10100840A83 /* ViewController.xib */,
-				FB683BB31640A10100840A83 /* Supporting Files */,
+				FB683BED1640AE8800840A83 /* AppDelegate.h */,
+				FB683BEE1640AE8800840A83 /* AppDelegate.m */,
+				FB683BF61640AE8800840A83 /* FirstViewController.h */,
+				FB683BF71640AE8800840A83 /* FirstViewController.m */,
+				FB683BF91640AE8800840A83 /* first.png */,
+				FB683BFB1640AE8800840A83 /* first@2x.png */,
+				FB683BFD1640AE8800840A83 /* SecondViewController.h */,
+				FB683BFE1640AE8800840A83 /* SecondViewController.m */,
+				FB683C001640AE8800840A83 /* second.png */,
+				FB683C021640AE8800840A83 /* second@2x.png */,
+				FB683C041640AE8800840A83 /* FirstViewController.xib */,
+				FB683C071640AE8800840A83 /* SecondViewController.xib */,
+				FB683BE51640AE8800840A83 /* Supporting Files */,
+				FB683C0F1640AEBD00840A83 /* ThirdViewController.h */,
+				FB683C101640AEBD00840A83 /* ThirdViewController.m */,
+				FB683C111640AEBD00840A83 /* ThirdViewController.xib */,
 			);
 			path = MDF1_Wk2;
 			sourceTree = "<group>";
 		};
-		FB683BB31640A10100840A83 /* Supporting Files */ = {
+		FB683BE51640AE8800840A83 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FB683BB41640A10100840A83 /* MDF1_Wk2-Info.plist */,
-				FB683BB51640A10100840A83 /* InfoPlist.strings */,
-				FB683BB81640A10100840A83 /* main.m */,
-				FB683BBA1640A10100840A83 /* MDF1_Wk2-Prefix.pch */,
-				FB683BBE1640A10100840A83 /* Default.png */,
-				FB683BC01640A10100840A83 /* Default@2x.png */,
-				FB683BC21640A10100840A83 /* Default-568h@2x.png */,
+				FB683BE61640AE8800840A83 /* MDF1_Wk2-Info.plist */,
+				FB683BE71640AE8800840A83 /* InfoPlist.strings */,
+				FB683BEA1640AE8800840A83 /* main.m */,
+				FB683BEC1640AE8800840A83 /* MDF1_Wk2-Prefix.pch */,
+				FB683BF01640AE8800840A83 /* Default.png */,
+				FB683BF21640AE8800840A83 /* Default@2x.png */,
+				FB683BF41640AE8800840A83 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -110,13 +138,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FB683BA71640A10100840A83 /* MDF1_Wk2 */ = {
+		FB683BD91640AE8800840A83 /* MDF1_Wk2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB683BCC1640A10100840A83 /* Build configuration list for PBXNativeTarget "MDF1_Wk2" */;
+			buildConfigurationList = FB683C0C1640AE8800840A83 /* Build configuration list for PBXNativeTarget "MDF1_Wk2" */;
 			buildPhases = (
-				FB683BA41640A10100840A83 /* Sources */,
-				FB683BA51640A10100840A83 /* Frameworks */,
-				FB683BA61640A10100840A83 /* Resources */,
+				FB683BD61640AE8800840A83 /* Sources */,
+				FB683BD71640AE8800840A83 /* Frameworks */,
+				FB683BD81640AE8800840A83 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -124,84 +152,100 @@
 			);
 			name = MDF1_Wk2;
 			productName = MDF1_Wk2;
-			productReference = FB683BA81640A10100840A83 /* MDF1_Wk2.app */;
+			productReference = FB683BDA1640AE8800840A83 /* MDF1_Wk2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FB683B9F1640A10100840A83 /* Project object */ = {
+		FB683BD11640AE8800840A83 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Brandon Sease";
 			};
-			buildConfigurationList = FB683BA21640A10100840A83 /* Build configuration list for PBXProject "MDF1_Wk2" */;
+			buildConfigurationList = FB683BD41640AE8800840A83 /* Build configuration list for PBXProject "MDF1_Wk2" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = FB683B9D1640A10100840A83;
-			productRefGroup = FB683BA91640A10100840A83 /* Products */;
+			mainGroup = FB683BCF1640AE8800840A83;
+			productRefGroup = FB683BDB1640AE8800840A83 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FB683BA71640A10100840A83 /* MDF1_Wk2 */,
+				FB683BD91640AE8800840A83 /* MDF1_Wk2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FB683BA61640A10100840A83 /* Resources */ = {
+		FB683BD81640AE8800840A83 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB683BB71640A10100840A83 /* InfoPlist.strings in Resources */,
-				FB683BBF1640A10100840A83 /* Default.png in Resources */,
-				FB683BC11640A10100840A83 /* Default@2x.png in Resources */,
-				FB683BC31640A10100840A83 /* Default-568h@2x.png in Resources */,
-				FB683BC91640A10100840A83 /* ViewController.xib in Resources */,
+				FB683BE91640AE8800840A83 /* InfoPlist.strings in Resources */,
+				FB683BF11640AE8800840A83 /* Default.png in Resources */,
+				FB683BF31640AE8800840A83 /* Default@2x.png in Resources */,
+				FB683BF51640AE8800840A83 /* Default-568h@2x.png in Resources */,
+				FB683BFA1640AE8800840A83 /* first.png in Resources */,
+				FB683BFC1640AE8800840A83 /* first@2x.png in Resources */,
+				FB683C011640AE8800840A83 /* second.png in Resources */,
+				FB683C031640AE8800840A83 /* second@2x.png in Resources */,
+				FB683C061640AE8800840A83 /* FirstViewController.xib in Resources */,
+				FB683C091640AE8800840A83 /* SecondViewController.xib in Resources */,
+				FB683C131640AEBD00840A83 /* ThirdViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FB683BA41640A10100840A83 /* Sources */ = {
+		FB683BD61640AE8800840A83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB683BB91640A10100840A83 /* main.m in Sources */,
-				FB683BBD1640A10100840A83 /* AppDelegate.m in Sources */,
-				FB683BC61640A10100840A83 /* ViewController.m in Sources */,
+				FB683BEB1640AE8800840A83 /* main.m in Sources */,
+				FB683BEF1640AE8800840A83 /* AppDelegate.m in Sources */,
+				FB683BF81640AE8800840A83 /* FirstViewController.m in Sources */,
+				FB683BFF1640AE8800840A83 /* SecondViewController.m in Sources */,
+				FB683C121640AEBD00840A83 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FB683BB51640A10100840A83 /* InfoPlist.strings */ = {
+		FB683BE71640AE8800840A83 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FB683BB61640A10100840A83 /* en */,
+				FB683BE81640AE8800840A83 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		FB683BC71640A10100840A83 /* ViewController.xib */ = {
+		FB683C041640AE8800840A83 /* FirstViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FB683BC81640A10100840A83 /* en */,
+				FB683C051640AE8800840A83 /* en */,
 			);
-			name = ViewController.xib;
+			name = FirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		FB683C071640AE8800840A83 /* SecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB683C081640AE8800840A83 /* en */,
+			);
+			name = SecondViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FB683BCA1640A10100840A83 /* Debug */ = {
+		FB683C0A1640AE8800840A83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -228,7 +272,7 @@
 			};
 			name = Debug;
 		};
-		FB683BCB1640A10100840A83 /* Release */ = {
+		FB683C0B1640AE8800840A83 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -249,7 +293,7 @@
 			};
 			name = Release;
 		};
-		FB683BCD1640A10100840A83 /* Debug */ = {
+		FB683C0D1640AE8800840A83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -260,7 +304,7 @@
 			};
 			name = Debug;
 		};
-		FB683BCE1640A10100840A83 /* Release */ = {
+		FB683C0E1640AE8800840A83 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -274,24 +318,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FB683BA21640A10100840A83 /* Build configuration list for PBXProject "MDF1_Wk2" */ = {
+		FB683BD41640AE8800840A83 /* Build configuration list for PBXProject "MDF1_Wk2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB683BCA1640A10100840A83 /* Debug */,
-				FB683BCB1640A10100840A83 /* Release */,
+				FB683C0A1640AE8800840A83 /* Debug */,
+				FB683C0B1640AE8800840A83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB683BCC1640A10100840A83 /* Build configuration list for PBXNativeTarget "MDF1_Wk2" */ = {
+		FB683C0C1640AE8800840A83 /* Build configuration list for PBXNativeTarget "MDF1_Wk2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB683BCD1640A10100840A83 /* Debug */,
-				FB683BCE1640A10100840A83 /* Release */,
+				FB683C0D1640AE8800840A83 /* Debug */,
+				FB683C0E1640AE8800840A83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FB683B9F1640A10100840A83 /* Project object */;
+	rootObject = FB683BD11640AE8800840A83 /* Project object */;
 }

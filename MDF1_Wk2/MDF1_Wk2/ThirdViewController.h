@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ThirdViewController.h
 //  MDF1_Wk2
 //
 //  Created by Brandon Sease on 10/30/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ThirdViewController : UIViewController
 
 @end
