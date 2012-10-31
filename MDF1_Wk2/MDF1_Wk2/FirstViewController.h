@@ -8,11 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@protocol detailViewDelegate <NSObject>
+
+@required
+
+-(void)didChoose:(UITextField*)rowId;
+
+@end
+
+@interface FirstViewController : UIViewController <UITableViewDelegate>
 {
     IBOutlet UITableView *tableView;
     NSArray *list;
+    id<detailViewDelegate> delegate;
+    UITextField *rowId;
 }
 
--(IBAction)onClick:(id)sender;
+@property (strong) id<detailViewDelegate> delegate;
+
 @end

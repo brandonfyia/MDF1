@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FirstViewController.h"
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <detailViewDelegate>
 
 @end

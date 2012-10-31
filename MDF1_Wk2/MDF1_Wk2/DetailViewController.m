@@ -26,6 +26,10 @@
 
 - (void)viewDidLoad
 {
+    FirstViewController *rowId = [[FirstViewController alloc] init];
+    placeHolder = [rowId didchoose];
+    NSString *title = placeHolder;
+    self.title = title;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -34,6 +38,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(void)didChoose:(UITextField*)rowId
+{
+    NSString *title = (NSString*)rowId;
+    self.title = title;
 }
 
 @end

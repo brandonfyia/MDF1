@@ -16,10 +16,15 @@
 
 @implementation FirstViewController
 
+@synthesize delegate;
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        rowId = [[UITextField alloc] init];
+        //delegate = nil;
         self.title = NSLocalizedString(@"First", @"First");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
     }
@@ -58,18 +63,26 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     cell.textLabel.text = [[list objectAtIndex:indexPath.row]objectAtIndex:0];
-    
+    rowId = [[list objectAtIndex:indexPath.row]objectAtIndex:0];
     return cell;
 }
 
 //Click for details
--(IBAction)onClick:(id)sender
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DetailViewController *detailView = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
     if (detailView != nil)
     {
+        
+//        if (delegate != nil)
+//        {
+            [delegate didChoose:rowId];
+//        }
         [self.navigationController pushViewController:detailView animated:TRUE];
     }
+    
 }
+
+
 
 @end
