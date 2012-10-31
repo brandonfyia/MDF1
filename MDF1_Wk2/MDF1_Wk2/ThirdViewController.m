@@ -64,13 +64,17 @@
 }
 
 //Click for details
--(IBAction)onClick:(id)sender
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DetailViewController *detailView = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
     if (detailView != nil)
     {
+        NSInteger actualRow = indexPath.row + 6;
+        detailView.title = [[list objectAtIndex:actualRow]objectAtIndex:0];
+        detailView.itemDetails =[[list objectAtIndex:actualRow]objectAtIndex:1];
         [self.navigationController pushViewController:detailView animated:TRUE];
     }
+    
 }
 
 @end
