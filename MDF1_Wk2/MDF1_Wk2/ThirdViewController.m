@@ -70,7 +70,6 @@
     if (detailView != nil)
     {
         NSInteger actualRow = indexPath.row + 6;
-        NSLog(@"row=%d", actualRow);
         detailView.title = [[list objectAtIndex:actualRow]objectAtIndex:0];
         detailView.itemDetails =[[list objectAtIndex:actualRow]objectAtIndex:1];
         [self.navigationController pushViewController:detailView animated:TRUE];
