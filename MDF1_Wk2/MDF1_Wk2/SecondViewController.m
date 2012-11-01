@@ -20,8 +20,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Second", @"Second");
-        self.tabBarItem.image = [UIImage imageNamed:@"second"];
+        self.title = NSLocalizedString(@"Entree  Menu", @"Entree");
+        //self.tabBarItem.image = [UIImage imageNamed:@"second"];
     }
     return self;
 }

@@ -13,7 +13,6 @@
 		FB683BE91640AE8800840A83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB683BE71640AE8800840A83 /* InfoPlist.strings */; };
 		FB683BEB1640AE8800840A83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB683BEA1640AE8800840A83 /* main.m */; };
 		FB683BEF1640AE8800840A83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB683BEE1640AE8800840A83 /* AppDelegate.m */; };
-		FB683BF11640AE8800840A83 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683BF01640AE8800840A83 /* Default.png */; };
 		FB683BF31640AE8800840A83 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683BF21640AE8800840A83 /* Default@2x.png */; };
 		FB683BF51640AE8800840A83 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683BF41640AE8800840A83 /* Default-568h@2x.png */; };
 		FB683BF81640AE8800840A83 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB683BF71640AE8800840A83 /* FirstViewController.m */; };
@@ -29,6 +28,11 @@
 		FB683C171640B22A00840A83 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB683C151640B22A00840A83 /* DetailViewController.m */; };
 		FB683C181640B22A00840A83 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB683C161640B22A00840A83 /* DetailViewController.xib */; };
 		FB683C1B1640B34200840A83 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = FB683C1A1640B34200840A83 /* Data.m */; };
+		FB683C3116420F7D00840A83 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683C3016420F7D00840A83 /* Default-568h@2x.png */; };
+		FB683C331642102A00840A83 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683C321642102900840A83 /* Default@2x.png */; };
+		FB683C38164210D800840A83 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683BF01640AE8800840A83 /* Default.png */; };
+		FB683C3A1642117A00840A83 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683C391642117A00840A83 /* icon.png */; };
+		FB683C3C164211C000840A83 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB683C3B164211C000840A83 /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +67,10 @@
 		FB683C161640B22A00840A83 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		FB683C191640B34200840A83 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		FB683C1A1640B34200840A83 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
+		FB683C3016420F7D00840A83 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FB683C321642102900840A83 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FB683C391642117A00840A83 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		FB683C3B164211C000840A83 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,10 @@
 		FB683BCF1640AE8800840A83 = {
 			isa = PBXGroup;
 			children = (
+				FB683C3B164211C000840A83 /* icon@2x.png */,
+				FB683C391642117A00840A83 /* icon.png */,
+				FB683C321642102900840A83 /* Default@2x.png */,
+				FB683C3016420F7D00840A83 /* Default-568h@2x.png */,
 				FB683BE41640AE8800840A83 /* MDF1_Wk2 */,
 				FB683BDD1640AE8800840A83 /* Frameworks */,
 				FB683BDB1640AE8800840A83 /* Products */,
@@ -200,7 +212,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB683BE91640AE8800840A83 /* InfoPlist.strings in Resources */,
-				FB683BF11640AE8800840A83 /* Default.png in Resources */,
 				FB683BF31640AE8800840A83 /* Default@2x.png in Resources */,
 				FB683BF51640AE8800840A83 /* Default-568h@2x.png in Resources */,
 				FB683BFA1640AE8800840A83 /* first.png in Resources */,
@@ -211,6 +222,11 @@
 				FB683C091640AE8800840A83 /* SecondViewController.xib in Resources */,
 				FB683C131640AEBD00840A83 /* ThirdViewController.xib in Resources */,
 				FB683C181640B22A00840A83 /* DetailViewController.xib in Resources */,
+				FB683C3116420F7D00840A83 /* Default-568h@2x.png in Resources */,
+				FB683C331642102A00840A83 /* Default@2x.png in Resources */,
+				FB683C38164210D800840A83 /* Default.png in Resources */,
+				FB683C3A1642117A00840A83 /* icon.png in Resources */,
+				FB683C3C164211C000840A83 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
