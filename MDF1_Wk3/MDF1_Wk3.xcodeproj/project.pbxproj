@@ -14,8 +14,6 @@
 		FBFE64031649F26F00E7DF32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE64021649F26F00E7DF32 /* main.m */; };
 		FBFE64071649F26F00E7DF32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE64061649F26F00E7DF32 /* AppDelegate.m */; };
 		FBFE64091649F26F00E7DF32 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE64081649F26F00E7DF32 /* Default.png */; };
-		FBFE640B1649F26F00E7DF32 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE640A1649F26F00E7DF32 /* Default@2x.png */; };
-		FBFE640D1649F26F00E7DF32 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE640C1649F26F00E7DF32 /* Default-568h@2x.png */; };
 		FBFE64101649F26F00E7DF32 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE640F1649F26F00E7DF32 /* FirstViewController.m */; };
 		FBFE64121649F26F00E7DF32 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE64111649F26F00E7DF32 /* first.png */; };
 		FBFE64141649F26F00E7DF32 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE64131649F26F00E7DF32 /* first@2x.png */; };
@@ -24,6 +22,14 @@
 		FBFE641B1649F26F00E7DF32 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE641A1649F26F00E7DF32 /* second@2x.png */; };
 		FBFE641E1649F26F00E7DF32 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFE641C1649F26F00E7DF32 /* FirstViewController.xib */; };
 		FBFE64211649F26F00E7DF32 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFE641F1649F26F00E7DF32 /* SecondViewController.xib */; };
+		FBFE64281649F67D00E7DF32 /* titlebar.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE64271649F67D00E7DF32 /* titlebar.png */; };
+		FBFE642A1649F76100E7DF32 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE64291649F76100E7DF32 /* icon.png */; };
+		FBFE642C1649F76700E7DF32 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE642B1649F76700E7DF32 /* icon@2x.png */; };
+		FBFE642E1649F77500E7DF32 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE642D1649F77500E7DF32 /* Default.png */; };
+		FBFE64301649F78000E7DF32 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE642F1649F78000E7DF32 /* Default@2x.png */; };
+		FBFE64321649F79400E7DF32 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE64311649F79400E7DF32 /* Default-568h@2x.png */; };
+		FBFE643A164A13B000E7DF32 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE6438164A13B000E7DF32 /* MapViewController.m */; };
+		FBFE643B164A13B000E7DF32 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFE6439164A13B000E7DF32 /* MapViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,14 +48,23 @@
 		FBFE640C1649F26F00E7DF32 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FBFE640E1649F26F00E7DF32 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		FBFE640F1649F26F00E7DF32 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		FBFE64111649F26F00E7DF32 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		FBFE64131649F26F00E7DF32 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		FBFE64111649F26F00E7DF32 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = first.png; path = MDF1_Wk3/first.png; sourceTree = "<group>"; };
+		FBFE64131649F26F00E7DF32 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "first@2x.png"; path = "MDF1_Wk3/first@2x.png"; sourceTree = "<group>"; };
 		FBFE64151649F26F00E7DF32 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		FBFE64161649F26F00E7DF32 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		FBFE64181649F26F00E7DF32 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		FBFE641A1649F26F00E7DF32 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		FBFE64181649F26F00E7DF32 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = second.png; path = MDF1_Wk3/second.png; sourceTree = "<group>"; };
+		FBFE641A1649F26F00E7DF32 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "second@2x.png"; path = "MDF1_Wk3/second@2x.png"; sourceTree = "<group>"; };
 		FBFE641D1649F26F00E7DF32 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		FBFE64201649F26F00E7DF32 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		FBFE64271649F67D00E7DF32 /* titlebar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = titlebar.png; path = MDF1_Wk3/titlebar.png; sourceTree = "<group>"; };
+		FBFE64291649F76100E7DF32 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		FBFE642B1649F76700E7DF32 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		FBFE642D1649F77500E7DF32 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FBFE642F1649F78000E7DF32 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FBFE64311649F79400E7DF32 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FBFE6437164A13B000E7DF32 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		FBFE6438164A13B000E7DF32 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		FBFE6439164A13B000E7DF32 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +84,16 @@
 		FBFE63E71649F26F00E7DF32 = {
 			isa = PBXGroup;
 			children = (
+				FBFE641A1649F26F00E7DF32 /* second@2x.png */,
+				FBFE64181649F26F00E7DF32 /* second.png */,
+				FBFE64131649F26F00E7DF32 /* first@2x.png */,
+				FBFE64111649F26F00E7DF32 /* first.png */,
+				FBFE64271649F67D00E7DF32 /* titlebar.png */,
+				FBFE64311649F79400E7DF32 /* Default-568h@2x.png */,
+				FBFE642F1649F78000E7DF32 /* Default@2x.png */,
+				FBFE642D1649F77500E7DF32 /* Default.png */,
+				FBFE642B1649F76700E7DF32 /* icon@2x.png */,
+				FBFE64291649F76100E7DF32 /* icon.png */,
 				FBFE63FC1649F26F00E7DF32 /* MDF1_Wk3 */,
 				FBFE63F51649F26F00E7DF32 /* Frameworks */,
 				FBFE63F31649F26F00E7DF32 /* Products */,
@@ -100,15 +125,14 @@
 				FBFE64061649F26F00E7DF32 /* AppDelegate.m */,
 				FBFE640E1649F26F00E7DF32 /* FirstViewController.h */,
 				FBFE640F1649F26F00E7DF32 /* FirstViewController.m */,
-				FBFE64111649F26F00E7DF32 /* first.png */,
-				FBFE64131649F26F00E7DF32 /* first@2x.png */,
+				FBFE641C1649F26F00E7DF32 /* FirstViewController.xib */,
 				FBFE64151649F26F00E7DF32 /* SecondViewController.h */,
 				FBFE64161649F26F00E7DF32 /* SecondViewController.m */,
-				FBFE64181649F26F00E7DF32 /* second.png */,
-				FBFE641A1649F26F00E7DF32 /* second@2x.png */,
-				FBFE641C1649F26F00E7DF32 /* FirstViewController.xib */,
 				FBFE641F1649F26F00E7DF32 /* SecondViewController.xib */,
 				FBFE63FD1649F26F00E7DF32 /* Supporting Files */,
+				FBFE6437164A13B000E7DF32 /* MapViewController.h */,
+				FBFE6438164A13B000E7DF32 /* MapViewController.m */,
+				FBFE6439164A13B000E7DF32 /* MapViewController.xib */,
 			);
 			path = MDF1_Wk3;
 			sourceTree = "<group>";
@@ -180,14 +204,19 @@
 			files = (
 				FBFE64011649F26F00E7DF32 /* InfoPlist.strings in Resources */,
 				FBFE64091649F26F00E7DF32 /* Default.png in Resources */,
-				FBFE640B1649F26F00E7DF32 /* Default@2x.png in Resources */,
-				FBFE640D1649F26F00E7DF32 /* Default-568h@2x.png in Resources */,
 				FBFE64121649F26F00E7DF32 /* first.png in Resources */,
 				FBFE64141649F26F00E7DF32 /* first@2x.png in Resources */,
 				FBFE64191649F26F00E7DF32 /* second.png in Resources */,
 				FBFE641B1649F26F00E7DF32 /* second@2x.png in Resources */,
 				FBFE641E1649F26F00E7DF32 /* FirstViewController.xib in Resources */,
 				FBFE64211649F26F00E7DF32 /* SecondViewController.xib in Resources */,
+				FBFE64281649F67D00E7DF32 /* titlebar.png in Resources */,
+				FBFE642A1649F76100E7DF32 /* icon.png in Resources */,
+				FBFE642C1649F76700E7DF32 /* icon@2x.png in Resources */,
+				FBFE642E1649F77500E7DF32 /* Default.png in Resources */,
+				FBFE64301649F78000E7DF32 /* Default@2x.png in Resources */,
+				FBFE64321649F79400E7DF32 /* Default-568h@2x.png in Resources */,
+				FBFE643B164A13B000E7DF32 /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +231,7 @@
 				FBFE64071649F26F00E7DF32 /* AppDelegate.m in Sources */,
 				FBFE64101649F26F00E7DF32 /* FirstViewController.m in Sources */,
 				FBFE64171649F26F00E7DF32 /* SecondViewController.m in Sources */,
+				FBFE643A164A13B000E7DF32 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
