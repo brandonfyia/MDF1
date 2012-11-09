@@ -14,6 +14,8 @@
 
 @implementation MapViewController
 
+@synthesize titleText, subtitleText, annotation, loc;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -25,6 +27,24 @@
 
 - (void)viewDidLoad
 {
+    //create default span and zoom level
+    MKCoordinateSpan span;
+    span.latitudeDelta = 20.0f;
+    span.longitudeDelta = 20.0f;
+    
+    MKCoordinateRegion region;
+    region.center = loc;
+    region.span = span;
+    mapView.region = region;
+    
+    //Fill in labels
+    title.text = titleText;
+    subtitle.text = subtitleText;
+    
+    //Show on map
+    [mapView addAnnotation:annotation];
+    
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }

@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "DataSource.h"
+#import "Annotations.h"
 
 @interface SecondViewController : UIViewController
-
+{
+    IBOutlet MKMapView *mapView;
+    NSMutableArray *list;
+}
 @end

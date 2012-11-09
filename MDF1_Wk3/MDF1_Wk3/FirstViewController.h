@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "MapViewController.h"
 
 @interface FirstViewController : UIViewController
+{
+    NSMutableArray *list;
+    IBOutlet UITableView *tableView;
+}
 
+-(IBAction)onEdit:(id)sender;
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "DataSource.h"
 
 @interface SecondViewController ()
 
@@ -18,7 +19,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Second", @"Second");
+        self.title = NSLocalizedString(@"Map", @"Map");
         self.tabBarItem.image = [UIImage imageNamed:@"second"];
     }
     return self;
@@ -26,6 +27,28 @@
 							
 - (void)viewDidLoad
 {
+    //create default span and zoom level
+    MKCoordinateSpan span;
+    span.latitudeDelta = 55.0f;
+    span.longitudeDelta = 55.0f;
+    
+    CLLocationCoordinate2D location;
+    location.latitude = 37.090f;
+    location.longitude = -95.712f;
+    
+    MKCoordinateRegion region;
+    region.center = location;
+    region.span = span;
+    mapView.region = region;
+    
+    //load annotations
+    DataSource *data = [[DataSource alloc] init];
+    list = [data getData];
+    
+    //Show annotations
+    [mapView addAnnotations:list];
+    NSLog(@"%@", list);
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

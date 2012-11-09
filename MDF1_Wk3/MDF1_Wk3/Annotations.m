@@ -9,5 +9,17 @@
 #import "Annotations.h"
 
 @implementation Annotations
+@synthesize title, subtitle, coordinate;
+
+-(id)initWithTitle:(NSString*)text subtitle:(NSString*)subText coord:(CLLocationCoordinate2D)coord
+{
+    if (self == [super init])
+    {
+        title = text;
+        subtitle = subText;
+        coordinate = coord;
+    }
+    return self;
+}
 
 @end

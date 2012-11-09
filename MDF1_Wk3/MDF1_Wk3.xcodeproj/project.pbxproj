@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBD71C2F164C571800E114C1 /* Annotations.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD71C2E164C571800E114C1 /* Annotations.m */; };
+		FBD71C32164C575200E114C1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD71C31164C575200E114C1 /* MapKit.framework */; };
+		FBD71C35164C590700E114C1 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD71C34164C590700E114C1 /* DataSource.m */; };
+		FBD71C3A164C929B00E114C1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE642D1649F77500E7DF32 /* Default.png */; };
 		FBFE63F71649F26F00E7DF32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFE63F61649F26F00E7DF32 /* UIKit.framework */; };
 		FBFE63F91649F26F00E7DF32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFE63F81649F26F00E7DF32 /* Foundation.framework */; };
 		FBFE63FB1649F26F00E7DF32 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFE63FA1649F26F00E7DF32 /* CoreGraphics.framework */; };
@@ -25,7 +29,6 @@
 		FBFE64281649F67D00E7DF32 /* titlebar.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE64271649F67D00E7DF32 /* titlebar.png */; };
 		FBFE642A1649F76100E7DF32 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE64291649F76100E7DF32 /* icon.png */; };
 		FBFE642C1649F76700E7DF32 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE642B1649F76700E7DF32 /* icon@2x.png */; };
-		FBFE642E1649F77500E7DF32 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE642D1649F77500E7DF32 /* Default.png */; };
 		FBFE64301649F78000E7DF32 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE642F1649F78000E7DF32 /* Default@2x.png */; };
 		FBFE64321649F79400E7DF32 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFE64311649F79400E7DF32 /* Default-568h@2x.png */; };
 		FBFE643A164A13B000E7DF32 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE6438164A13B000E7DF32 /* MapViewController.m */; };
@@ -33,6 +36,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FBD71C2D164C571800E114C1 /* Annotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotations.h; sourceTree = "<group>"; };
+		FBD71C2E164C571800E114C1 /* Annotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotations.m; sourceTree = "<group>"; };
+		FBD71C31164C575200E114C1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FBD71C33164C590700E114C1 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		FBD71C34164C590700E114C1 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
 		FBFE63F21649F26F00E7DF32 /* MDF1_Wk3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDF1_Wk3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFE63F61649F26F00E7DF32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FBFE63F81649F26F00E7DF32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -72,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD71C32164C575200E114C1 /* MapKit.framework in Frameworks */,
 				FBFE63F71649F26F00E7DF32 /* UIKit.framework in Frameworks */,
 				FBFE63F91649F26F00E7DF32 /* Foundation.framework in Frameworks */,
 				FBFE63FB1649F26F00E7DF32 /* CoreGraphics.framework in Frameworks */,
@@ -84,6 +93,7 @@
 		FBFE63E71649F26F00E7DF32 = {
 			isa = PBXGroup;
 			children = (
+				FBD71C31164C575200E114C1 /* MapKit.framework */,
 				FBFE641A1649F26F00E7DF32 /* second@2x.png */,
 				FBFE64181649F26F00E7DF32 /* second.png */,
 				FBFE64131649F26F00E7DF32 /* first@2x.png */,
@@ -133,6 +143,10 @@
 				FBFE6437164A13B000E7DF32 /* MapViewController.h */,
 				FBFE6438164A13B000E7DF32 /* MapViewController.m */,
 				FBFE6439164A13B000E7DF32 /* MapViewController.xib */,
+				FBD71C2D164C571800E114C1 /* Annotations.h */,
+				FBD71C2E164C571800E114C1 /* Annotations.m */,
+				FBD71C33164C590700E114C1 /* DataSource.h */,
+				FBD71C34164C590700E114C1 /* DataSource.m */,
 			);
 			path = MDF1_Wk3;
 			sourceTree = "<group>";
@@ -213,10 +227,10 @@
 				FBFE64281649F67D00E7DF32 /* titlebar.png in Resources */,
 				FBFE642A1649F76100E7DF32 /* icon.png in Resources */,
 				FBFE642C1649F76700E7DF32 /* icon@2x.png in Resources */,
-				FBFE642E1649F77500E7DF32 /* Default.png in Resources */,
 				FBFE64301649F78000E7DF32 /* Default@2x.png in Resources */,
 				FBFE64321649F79400E7DF32 /* Default-568h@2x.png in Resources */,
 				FBFE643B164A13B000E7DF32 /* MapViewController.xib in Resources */,
+				FBD71C3A164C929B00E114C1 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +246,8 @@
 				FBFE64101649F26F00E7DF32 /* FirstViewController.m in Sources */,
 				FBFE64171649F26F00E7DF32 /* SecondViewController.m in Sources */,
 				FBFE643A164A13B000E7DF32 /* MapViewController.m in Sources */,
+				FBD71C2F164C571800E114C1 /* Annotations.m in Sources */,
+				FBD71C35164C590700E114C1 /* DataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +370,7 @@
 				FBFE64261649F26F00E7DF32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
+#import "Annotations.h"
 
 @interface DataSource : NSObject
+
+-(NSMutableArray*)getData;
 
 @end
